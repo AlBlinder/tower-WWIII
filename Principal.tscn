@@ -1,10 +1,16 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="TileSet" id=1]
 
 [node name="Principal" type="Node2D"]
 
 [node name="Joc" type="Node2D" parent="."]
 
 [node name="Mapa" type="Node2D" parent="Joc"]
+
+[node name="TileMap" type="TileMap" parent="Joc/Mapa"]
+tile_set = SubResource( 1 )
+format = 1
 
 [node name="Enemics" type="Node2D" parent="Joc"]
 
