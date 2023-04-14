@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Flash_B_03.png-a51ea6653064b217b41116a8b8ddaa53.stex"
+path="res://.import/Flash_B_03.png-8d64972597c15b2babe9066fdae1f83e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/PNG/Effects/Flash_B_03.png"
-dest_files=[ "res://.import/Flash_B_03.png-a51ea6653064b217b41116a8b8ddaa53.stex" ]
+source_file="res://Tanques/PNG/Effects/Flash_B_03.png"
+dest_files=[ "res://.import/Flash_B_03.png-8d64972597c15b2babe9066fdae1f83e.stex" ]
 
 [params]
 

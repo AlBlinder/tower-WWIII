@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Light_Shell.png-e2ebe86d13b87323a4c6c14155f8ad88.stex"
+path="res://.import/Light_Shell.png-e9aa5de92802e8af69b6182f81631564.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/PNG/Effects/Light_Shell.png"
-dest_files=[ "res://.import/Light_Shell.png-e2ebe86d13b87323a4c6c14155f8ad88.stex" ]
+source_file="res://Tanques/PNG/Effects/Light_Shell.png"
+dest_files=[ "res://.import/Light_Shell.png-e9aa5de92802e8af69b6182f81631564.stex" ]
 
 [params]
 

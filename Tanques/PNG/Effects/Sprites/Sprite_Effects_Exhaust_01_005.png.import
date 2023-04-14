@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sprite_Effects_Exhaust_01_005.png-246dfb0de35c75f1c95f33c6408ea607.stex"
+path="res://.import/Sprite_Effects_Exhaust_01_005.png-aa7fc9518419a223df577287ee95774b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/PNG/Effects/Sprites/Sprite_Effects_Exhaust_01_005.png"
-dest_files=[ "res://.import/Sprite_Effects_Exhaust_01_005.png-246dfb0de35c75f1c95f33c6408ea607.stex" ]
+source_file="res://Tanques/PNG/Effects/Sprites/Sprite_Effects_Exhaust_01_005.png"
+dest_files=[ "res://.import/Sprite_Effects_Exhaust_01_005.png-aa7fc9518419a223df577287ee95774b.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Medium_Shell.png-2e24406acbab275dbb2c2e0660e6cb78.stex"
+path="res://.import/Medium_Shell.png-fee3e5c0cf4405d0cf495aa9bf9db903.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/PNG/Effects/Medium_Shell.png"
-dest_files=[ "res://.import/Medium_Shell.png-2e24406acbab275dbb2c2e0660e6cb78.stex" ]
+source_file="res://Tanques/PNG/Effects/Medium_Shell.png"
+dest_files=[ "res://.import/Medium_Shell.png-fee3e5c0cf4405d0cf495aa9bf9db903.stex" ]
 
 [params]
 

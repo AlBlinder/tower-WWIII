@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sprite_Fire_Shots_Flame_004.png-f5b0ed8783f546a8a3519fcc57a01498.stex"
+path="res://.import/Sprite_Fire_Shots_Flame_004.png-3e58fda972cbc846449df7559325d278.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/PNG/Effects/Sprites/Sprite_Fire_Shots_Flame_004.png"
-dest_files=[ "res://.import/Sprite_Fire_Shots_Flame_004.png-f5b0ed8783f546a8a3519fcc57a01498.stex" ]
+source_file="res://Tanques/PNG/Effects/Sprites/Sprite_Fire_Shots_Flame_004.png"
+dest_files=[ "res://.import/Sprite_Fire_Shots_Flame_004.png-3e58fda972cbc846449df7559325d278.stex" ]
 
 [params]
 

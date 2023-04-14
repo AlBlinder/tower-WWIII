@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Tire_Track_02.png-20fb96e4258c7a72c1dc7af7889aac15.stex"
+path="res://.import/Tire_Track_02.png-43f93d0a7b849dae344253c8751796d6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/PNG/Effects/Tire_Track_02.png"
-dest_files=[ "res://.import/Tire_Track_02.png-20fb96e4258c7a72c1dc7af7889aac15.stex" ]
+source_file="res://Tanques/PNG/Effects/Tire_Track_02.png"
+dest_files=[ "res://.import/Tire_Track_02.png-43f93d0a7b849dae344253c8751796d6.stex" ]
 
 [params]
 

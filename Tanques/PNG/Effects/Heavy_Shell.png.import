@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Heavy_Shell.png-73602fd577a2159ce8bbbc0757b49d7b.stex"
+path="res://.import/Heavy_Shell.png-5e9f32deef55bba61327f9efef081ba8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/PNG/Effects/Heavy_Shell.png"
-dest_files=[ "res://.import/Heavy_Shell.png-73602fd577a2159ce8bbbc0757b49d7b.stex" ]
+source_file="res://Tanques/PNG/Effects/Heavy_Shell.png"
+dest_files=[ "res://.import/Heavy_Shell.png-5e9f32deef55bba61327f9efef081ba8.stex" ]
 
 [params]
 

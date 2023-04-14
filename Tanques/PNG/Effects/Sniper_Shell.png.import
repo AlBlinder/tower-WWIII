@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sniper_Shell.png-1883ba1a4c4990ece7037795e8b0e6b3.stex"
+path="res://.import/Sniper_Shell.png-4cb67749c1b837bda7207b053647149a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/PNG/Effects/Sniper_Shell.png"
-dest_files=[ "res://.import/Sniper_Shell.png-1883ba1a4c4990ece7037795e8b0e6b3.stex" ]
+source_file="res://Tanques/PNG/Effects/Sniper_Shell.png"
+dest_files=[ "res://.import/Sniper_Shell.png-4cb67749c1b837bda7207b053647149a.stex" ]
 
 [params]
 

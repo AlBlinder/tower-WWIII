@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Explosion_F.png-d317d9668d160e5a31bac3a926be004d.stex"
+path="res://.import/Explosion_F.png-51784e7aad406117b48ffc79d18e4add.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/PNG/Effects/Explosion_F.png"
-dest_files=[ "res://.import/Explosion_F.png-d317d9668d160e5a31bac3a926be004d.stex" ]
+source_file="res://Tanques/PNG/Effects/Explosion_F.png"
+dest_files=[ "res://.import/Explosion_F.png-51784e7aad406117b48ffc79d18e4add.stex" ]
 
 [params]
 

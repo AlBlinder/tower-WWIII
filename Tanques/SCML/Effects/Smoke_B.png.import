@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Smoke_B.png-839c4c1a6e8ce0fb295522fa65148244.stex"
+path="res://.import/Smoke_B.png-323272fefcd059a23dd18cad206fb651.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/SCML/Effects/Smoke_B.png"
-dest_files=[ "res://.import/Smoke_B.png-839c4c1a6e8ce0fb295522fa65148244.stex" ]
+source_file="res://Tanques/SCML/Effects/Smoke_B.png"
+dest_files=[ "res://.import/Smoke_B.png-323272fefcd059a23dd18cad206fb651.stex" ]
 
 [params]
 

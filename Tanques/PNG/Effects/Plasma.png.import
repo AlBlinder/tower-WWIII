@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Plasma.png-1383f8822928e2510743bc5523497908.stex"
+path="res://.import/Plasma.png-fc926c9114cf171410201e9b2396e5ac.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/PNG/Effects/Plasma.png"
-dest_files=[ "res://.import/Plasma.png-1383f8822928e2510743bc5523497908.stex" ]
+source_file="res://Tanques/PNG/Effects/Plasma.png"
+dest_files=[ "res://.import/Plasma.png-fc926c9114cf171410201e9b2396e5ac.stex" ]
 
 [params]
 

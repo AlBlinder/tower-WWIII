@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Hull_03.png-ea18f6324ffc53825e88155cc7d2ebeb.stex"
+path="res://.import/Hull_03.png-63e796481f9dadde445b89747844125d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/PNG/Hulls_Color_D/Hull_03.png"
-dest_files=[ "res://.import/Hull_03.png-ea18f6324ffc53825e88155cc7d2ebeb.stex" ]
+source_file="res://Tanques/PNG/Hulls_Color_D/Hull_03.png"
+dest_files=[ "res://.import/Hull_03.png-63e796481f9dadde445b89747844125d.stex" ]
 
 [params]
 

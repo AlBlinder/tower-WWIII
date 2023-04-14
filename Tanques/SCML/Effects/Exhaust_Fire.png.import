@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Exhaust_Fire.png-b28027fbdd916b377dac37becf2037a5.stex"
+path="res://.import/Exhaust_Fire.png-8cf5cf201ea279cdb4a2d90d58d6a76c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/SCML/Effects/Exhaust_Fire.png"
-dest_files=[ "res://.import/Exhaust_Fire.png-b28027fbdd916b377dac37becf2037a5.stex" ]
+source_file="res://Tanques/SCML/Effects/Exhaust_Fire.png"
+dest_files=[ "res://.import/Exhaust_Fire.png-8cf5cf201ea279cdb4a2d90d58d6a76c.stex" ]
 
 [params]
 

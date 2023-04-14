@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Gun_03.png-150509fa2817b93746e126a58220e6b4.stex"
+path="res://.import/Gun_03.png-efa03e37a940006e347acb8351e2ac3c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/PNG/Weapon_Color_A/Gun_03.png"
-dest_files=[ "res://.import/Gun_03.png-150509fa2817b93746e126a58220e6b4.stex" ]
+source_file="res://Tanques/PNG/Weapon_Color_A/Gun_03.png"
+dest_files=[ "res://.import/Gun_03.png-efa03e37a940006e347acb8351e2ac3c.stex" ]
 
 [params]
 
