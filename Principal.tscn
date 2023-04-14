@@ -2,4 +2,12 @@
 
 [node name="Principal" type="Node2D"]
 
-[node name="Mapa" type="Node2D" parent="."]
+[node name="Joc" type="Node2D" parent="."]
+
+[node name="Mapa" type="Node2D" parent="Joc"]
+
+[node name="Enemics" type="Node2D" parent="Joc"]
+
+[node name="Torres" type="Node2D" parent="Joc"]
+
+[node name="Menú" type="Node2D" parent="."]
