@@ -1,18 +1,13 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Enemics.tscn" type="PackedScene" id=1]
-
-[sub_resource type="TileSet" id=1]
+[ext_resource path="res://Mapa.tscn" type="PackedScene" id=2]
 
 [node name="Principal" type="Node2D"]
 
 [node name="Joc" type="Node2D" parent="."]
 
-[node name="Mapa" type="Node2D" parent="Joc"]
-
-[node name="TileMap" type="TileMap" parent="Joc/Mapa"]
-tile_set = SubResource( 1 )
-format = 1
+[node name="Mapa" parent="Joc" instance=ExtResource( 2 )]
 
 [node name="Enemics" parent="Joc" instance=ExtResource( 1 )]
 
