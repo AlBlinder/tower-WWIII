@@ -14,5 +14,3 @@ func _process(delta):
 
 func avança():
 	
-	
-	
