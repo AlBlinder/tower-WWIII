@@ -9,7 +9,7 @@
 extents = Vector2( 85.5, 136.5 )
 
 [node name="Tanc1" type="Node2D"]
-position = Vector2( 1010, 218 )
+position = Vector2( 1332, 748 )
 scale = Vector2( 0.2, 0.2 )
 script = ExtResource( 4 )
 
