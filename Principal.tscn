@@ -19,7 +19,7 @@ format = 1
 [node name="Enemics" type="Node2D" parent="Joc"]
 
 [node name="Tanc1" parent="Joc/Enemics" instance=ExtResource( 1 )]
-position = Vector2( 237, 238 )
+position = Vector2( 101, 105 )
 
 [node name="Tanc2" parent="Joc/Enemics" instance=ExtResource( 2 )]
 
