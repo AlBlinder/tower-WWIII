@@ -1,8 +1,4 @@
-[gd_scene load_steps=5 format=2]
-
-[ext_resource path="res://Tanc1.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Tanc2.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Tanc3.tscn" type="PackedScene" id=3]
+[gd_scene load_steps=2 format=2]
 
 [sub_resource type="TileSet" id=1]
 
@@ -17,13 +13,6 @@ tile_set = SubResource( 1 )
 format = 1
 
 [node name="Enemics" type="Node2D" parent="Joc"]
-
-[node name="Tanc1" parent="Joc/Enemics" instance=ExtResource( 1 )]
-position = Vector2( 101, 105 )
-
-[node name="Tanc2" parent="Joc/Enemics" instance=ExtResource( 2 )]
-
-[node name="Tanc3" parent="Joc/Enemics" instance=ExtResource( 3 )]
 
 [node name="Torres" type="Node2D" parent="Joc"]
 
