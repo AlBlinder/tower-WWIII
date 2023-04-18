@@ -5,8 +5,8 @@
 
 [node name="Joc" type="Node2D"]
 
-[node name="Mapa" type="Node2D" parent="." instance=ExtResource( 2 )]
+[node name="Mapa" parent="." instance=ExtResource( 2 )]
 
-[node name="Enemics" type="Node2D" parent="." instance=ExtResource( 1 )]
+[node name="Enemics" parent="." instance=ExtResource( 1 )]
 
 [node name="Torres" type="Node2D" parent="."]
