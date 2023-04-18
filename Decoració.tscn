@@ -1,0 +1,6 @@
+[gd_scene format=2]
+
+[node name="Decoració2" type="Node2D"]
+
+[node name="Decoració" type="TileMap" parent="."]
+format = 1
