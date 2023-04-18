@@ -6,7 +6,7 @@
 [ext_resource path="res://Tanc1.gd" type="Script" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 85.5, 136.5 )
+extents = Vector2( 137.5, 85 )
 
 [node name="Tanc1" type="Node2D"]
 position = Vector2( 1332, 748 )
@@ -16,18 +16,24 @@ script = ExtResource( 4 )
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
-position = Vector2( 0.5, -8.5 )
+position = Vector2( 7.5, 0 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 1 )
 
 [node name="Track1B2" type="Sprite" parent="KinematicBody2D"]
-position = Vector2( -52, -21 )
+position = Vector2( 20.9995, -52.0005 )
+rotation = 1.5708
+scale = Vector2( 1, 1 )
 texture = ExtResource( 3 )
 
 [node name="Track1B" type="Sprite" parent="KinematicBody2D"]
-position = Vector2( 52, -21 )
+position = Vector2( 20.9995, 52 )
+rotation = 1.5708
+scale = Vector2( 1, 1 )
 texture = ExtResource( 3 )
 
 [node name="Hull02" type="Sprite" parent="KinematicBody2D"]
+rotation = 1.5708
 texture = ExtResource( 2 )
 
 [node name="Gun01" type="Sprite" parent="KinematicBody2D/Hull02"]
