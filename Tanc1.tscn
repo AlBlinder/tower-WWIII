@@ -17,19 +17,16 @@ script = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
 position = Vector2( 7.5, 0 )
-scale = Vector2( 1, 1 )
 shape = SubResource( 1 )
 
 [node name="Track1B2" type="Sprite" parent="KinematicBody2D"]
 position = Vector2( 20.9995, -52.0005 )
 rotation = 1.5708
-scale = Vector2( 1, 1 )
 texture = ExtResource( 3 )
 
 [node name="Track1B" type="Sprite" parent="KinematicBody2D"]
 position = Vector2( 20.9995, 52 )
 rotation = 1.5708
-scale = Vector2( 1, 1 )
 texture = ExtResource( 3 )
 
 [node name="Hull02" type="Sprite" parent="KinematicBody2D"]
