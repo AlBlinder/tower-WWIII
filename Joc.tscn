@@ -9,5 +9,6 @@
 [node name="Mapa" parent="." instance=ExtResource( 2 )]
 
 [node name="Enemics" parent="." instance=ExtResource( 1 )]
+position = Vector2( -29, 96 )
 
 [node name="Torres" parent="." instance=ExtResource( 3 )]
