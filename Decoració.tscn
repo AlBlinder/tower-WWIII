@@ -41,39 +41,69 @@ rotation = -1.4748
 scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 5 )
 
-[node name="Marques_terrestres" type="Node2D" parent="."]
+[node name="Barreres" type="Node2D" parent="."]
 
-[node name="Sprite" type="Sprite" parent="Marques_terrestres"]
-position = Vector2( 106, 62 )
+[node name="Sprite8" type="Sprite" parent="Barreres"]
+position = Vector2( 1807, 62 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 8 )
 
-[node name="Sprite2" type="Sprite" parent="Marques_terrestres"]
+[node name="Sprite9" type="Sprite" parent="Barreres"]
+position = Vector2( 1783, 94 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 8 )
+
+[node name="Sprite10" type="Sprite" parent="Barreres"]
+position = Vector2( 1807, 128 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 8 )
+
+[node name="Sprite" type="Sprite" parent="Barreres"]
+position = Vector2( 106, 56 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 8 )
+
+[node name="Sprite2" type="Sprite" parent="Barreres"]
 position = Vector2( 106, 135 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 8 )
 
-[node name="Sprite3" type="Sprite" parent="Marques_terrestres"]
+[node name="Sprite3" type="Sprite" parent="Barreres"]
 position = Vector2( 106, 135 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 8 )
 
-[node name="Sprite4" type="Sprite" parent="Marques_terrestres"]
-position = Vector2( 114, 41 )
+[node name="Sprite4" type="Sprite" parent="Barreres"]
+position = Vector2( 113, 33 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 8 )
 
-[node name="Sprite5" type="Sprite" parent="Marques_terrestres"]
+[node name="Sprite5" type="Sprite" parent="Barreres"]
 position = Vector2( 112, 159 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 8 )
 
-[node name="Sprite6" type="Sprite" parent="Marques_terrestres"]
+[node name="Sprite6" type="Sprite" parent="Barreres"]
 position = Vector2( 125, 180 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 8 )
 
-[node name="Sprite7" type="Sprite" parent="Marques_terrestres"]
-position = Vector2( 124, 19 )
+[node name="Sprite7" type="Sprite" parent="Barreres"]
+position = Vector2( 127, 13 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 8 )
+
+[node name="Sprite7" type="Sprite" parent="."]
+position = Vector2( 67, 255 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 8 )
+
+[node name="Sprite8" type="Sprite" parent="."]
+position = Vector2( 94, 287 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 8 )
+
+[node name="Sprite9" type="Sprite" parent="."]
+position = Vector2( 69, 323 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 8 )
