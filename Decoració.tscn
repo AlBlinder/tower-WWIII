@@ -1,6 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Terra2.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Objectes/PNG/Decor_Items/Decor_Pipe_A_02.png" type="Texture" id=2]
+[ext_resource path="res://Objectes/PNG/Decor_Items/Decor_Pipe_B.png" type="Texture" id=3]
 [ext_resource path="res://Objectes/PNG/Decor_Items/Container_A.png" type="Texture" id=5]
 [ext_resource path="res://Objectes/PNG/Decor_Items/Czech_Hdgehog_A.png" type="Texture" id=8]
 [ext_resource path="res://Objectes/PNG/Decor_Items/Container_B.png" type="Texture" id=9]
@@ -93,17 +95,29 @@ position = Vector2( 127, 13 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 8 )
 
-[node name="Sprite7" type="Sprite" parent="."]
+[node name="Sprite11" type="Sprite" parent="Barreres"]
 position = Vector2( 67, 255 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 8 )
 
-[node name="Sprite8" type="Sprite" parent="."]
+[node name="Sprite12" type="Sprite" parent="Barreres"]
 position = Vector2( 94, 287 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 8 )
 
-[node name="Sprite9" type="Sprite" parent="."]
+[node name="Sprite13" type="Sprite" parent="Barreres"]
 position = Vector2( 69, 323 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 8 )
+
+[node name="Tuberies" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="Tuberies"]
+position = Vector2( 432, 744 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 2 )
+
+[node name="Sprite2" type="Sprite" parent="Tuberies"]
+position = Vector2( 509, 744 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 3 )
