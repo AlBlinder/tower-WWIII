@@ -1,4 +1,4 @@
-extends Node2D
+extends PathFollow2D
 
 
 var moviment := Vector2(1,1)
