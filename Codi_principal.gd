@@ -14,6 +14,6 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	$Joc/Enemics/Tanc1.avanca()
-	$Joc/Enemics/Tanc1.rota(0.4)
+	#$Joc/Enemics/Tanc1.rota(0.4)
 	
 
