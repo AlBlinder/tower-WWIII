@@ -7,9 +7,10 @@
 [node name="Enemics" type="Node2D"]
 
 [node name="Tanc1" parent="." instance=ExtResource( 2 )]
-position = Vector2( 237, 238 )
 
 [node name="Tanc2" parent="." instance=ExtResource( 1 )]
+visible = false
 position = Vector2( -211, 8 )
 
 [node name="Tanc3" parent="." instance=ExtResource( 3 )]
+visible = false
