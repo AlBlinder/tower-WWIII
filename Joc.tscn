@@ -1,13 +1,13 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Enemics.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Mapa.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Torres.tscn" type="PackedScene" id=3]
 
 [node name="Joc" type="Node2D"]
 
 [node name="Mapa" parent="." instance=ExtResource( 2 )]
 
 [node name="Enemics" parent="." instance=ExtResource( 1 )]
-position = Vector2( -29, 96 )
 
-[node name="Torres" type="Node2D" parent="."]
+[node name="Torres" parent="." instance=ExtResource( 3 )]
