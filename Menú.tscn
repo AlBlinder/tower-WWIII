@@ -1,3 +1,37 @@
 [gd_scene format=2]
 
 [node name="Menú" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="1" type="Label" parent="CanvasLayer"]
+margin_left = 829.0
+margin_top = 647.0
+margin_right = 871.0
+margin_bottom = 661.0
+rect_scale = Vector2( 5, 5 )
+text = "EXITE  "
+
+[node name="2" type="Label" parent="CanvasLayer"]
+margin_left = 803.0
+margin_top = 452.0
+margin_right = 859.0
+margin_bottom = 466.0
+rect_scale = Vector2( 5, 5 )
+text = "CREDITS "
+
+[node name="3" type="Label" parent="CanvasLayer"]
+margin_left = 842.0
+margin_top = 266.0
+margin_right = 877.0
+margin_bottom = 280.0
+rect_scale = Vector2( 5, 5 )
+text = "PLAY "
+
+[node name="4" type="Label" parent="CanvasLayer"]
+margin_left = 609.0
+margin_top = 38.0
+margin_right = 707.0
+margin_bottom = 52.0
+rect_scale = Vector2( 7, 7 )
+text = "TOWER WWIII"
