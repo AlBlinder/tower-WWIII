@@ -114,10 +114,60 @@ texture = ExtResource( 8 )
 
 [node name="Sprite" type="Sprite" parent="Tuberies"]
 position = Vector2( 432, 744 )
-scale = Vector2( 0.4, 0.4 )
+scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 2 )
 
 [node name="Sprite2" type="Sprite" parent="Tuberies"]
-position = Vector2( 509, 744 )
-scale = Vector2( 0.4, 0.4 )
+position = Vector2( 489, 744 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+
+[node name="Sprite3" type="Sprite" parent="Tuberies"]
+position = Vector2( 565, 744 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+
+[node name="Sprite4" type="Sprite" parent="Tuberies"]
+position = Vector2( 641, 744 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+
+[node name="Sprite5" type="Sprite" parent="Tuberies"]
+position = Vector2( 717, 744 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+
+[node name="Sprite6" type="Sprite" parent="Tuberies"]
+position = Vector2( 793, 744 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+
+[node name="Sprite7" type="Sprite" parent="Tuberies"]
+position = Vector2( 869, 744 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+
+[node name="Sprite8" type="Sprite" parent="Tuberies"]
+position = Vector2( 945, 744 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+
+[node name="Sprite9" type="Sprite" parent="Tuberies"]
+position = Vector2( 1021, 744 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+
+[node name="Sprite10" type="Sprite" parent="Tuberies"]
+position = Vector2( 1096, 744 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+
+[node name="Sprite11" type="Sprite" parent="Tuberies"]
+position = Vector2( 1172, 744 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 3 )
+
+[node name="Sprite12" type="Sprite" parent="Tuberies"]
+position = Vector2( 1248, 744 )
+scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 3 )
