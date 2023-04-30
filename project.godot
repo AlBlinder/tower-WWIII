@@ -17,6 +17,11 @@ run/main_scene="res://Canviador_escenes.tscn"
 
 window/size/width=1900
 window/size/height=1000
+mouse_cursor/custom_image="res://UI/Altres/PNG/cursor_pointerFlat_shadow.png"
+
+[global]
+
+cursor=false
 
 [gui]
 
