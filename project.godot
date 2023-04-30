@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="Tower- Wwiii"
-run/main_scene="res://Principal.tscn"
+run/main_scene="res://Canviador_escenes.tscn"
 
 [display]
 
