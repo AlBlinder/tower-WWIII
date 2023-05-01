@@ -1,6 +1,6 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://Enemics.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Tanc2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Mapa.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Torretes/Torre1.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Tanc1.tscn" type="PackedScene" id=4]
@@ -8,10 +8,11 @@
 [ext_resource path="res://Torretes/Torre2.gd" type="Script" id=6]
 [ext_resource path="res://Torretes/Torre3.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Torretes/Torre3.gd" type="Script" id=8]
+[ext_resource path="res://Tanc3.tscn" type="PackedScene" id=9]
 
 [sub_resource type="Curve2D" id=1]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -4, 96, 0, 0, 0, 0, 671, 92, 0, 0, 0, 0, 1079, 96, 0, 0, 0, 0, 1708, 91, 0, 0, 0, 0, 1711, 287, 0, 0, 0, 0, 172, 288, 0, 0, 0, 0, 172, 485 )
+"points": PoolVector2Array( 0, 0, 0, 0, -74, 67, -11.3012, -12.9919, 11.3012, 12.9919, 1718, 67, 11.5124, -9.3754, -11.5124, 9.3754, 1719, 259, 13.1669, -10.9609, -13.1669, 10.9609, 163, 259, -12.9601, -13.8563, 12.9601, 13.8563, 163, 451, -11.3056, -15.8555, 11.3056, 15.8555, 1661, 451, 14.4767, -12.4086, -14.4767, 12.4086, 1661, 624, 16.2001, -16.0623, -16.2001, 16.0623, 144, 624, -11.3746, -13.7873, 11.3746, 13.7873, 144, 797, 0, 0, 0, 0, 2084, 797 )
 }
 
 [node name="Joc" type="Node2D"]
@@ -31,11 +32,28 @@ script = ExtResource( 6 )
 position = Vector2( 1000, 321 )
 script = ExtResource( 8 )
 
-[node name="Enemics" parent="Mapa" instance=ExtResource( 1 )]
-
 [node name="Enemics2" type="Path2D" parent="Mapa"]
 curve = SubResource( 1 )
 
-[node name="Tanc1" parent="Mapa/Enemics2" instance=ExtResource( 4 )]
-position = Vector2( -4, 96 )
-rotation = -0.00592844
+[node name="Tanc1" type="PathFollow2D" parent="Mapa/Enemics2"]
+position = Vector2( -74, 67 )
+rotation = -0.00722313
+
+[node name="T1" parent="Mapa/Enemics2/Tanc1" instance=ExtResource( 4 )]
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Tanc2" type="PathFollow2D" parent="Mapa/Enemics2"]
+position = Vector2( -74, 67 )
+rotation = -0.00722313
+
+[node name="Tanc2" parent="Mapa/Enemics2/Tanc2" instance=ExtResource( 1 )]
+position = Vector2( -48.8615, -19.3534 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="Tanc3" type="PathFollow2D" parent="Mapa/Enemics2"]
+position = Vector2( -74, 67 )
+rotation = -0.00722313
+
+[node name="Tanc3" parent="Mapa/Enemics2/Tanc3" instance=ExtResource( 9 )]
+position = Vector2( -217.283, 38.4315 )
+scale = Vector2( 0.25, 0.25 )
