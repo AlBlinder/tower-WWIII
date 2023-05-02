@@ -32,28 +32,28 @@ script = ExtResource( 6 )
 position = Vector2( 1000, 321 )
 script = ExtResource( 8 )
 
-[node name="Enemics2" type="Path2D" parent="Mapa"]
+[node name="Enemics" type="Path2D" parent="Mapa"]
 curve = SubResource( 1 )
 
-[node name="Tanc1" type="PathFollow2D" parent="Mapa/Enemics2"]
+[node name="Tanc1" type="PathFollow2D" parent="Mapa/Enemics"]
 position = Vector2( -74, 67 )
 rotation = -0.00722313
 
-[node name="T1" parent="Mapa/Enemics2/Tanc1" instance=ExtResource( 4 )]
+[node name="T1" parent="Mapa/Enemics/Tanc1" instance=ExtResource( 4 )]
 scale = Vector2( 0.25, 0.25 )
 
-[node name="Tanc2" type="PathFollow2D" parent="Mapa/Enemics2"]
+[node name="Tanc2" type="PathFollow2D" parent="Mapa/Enemics"]
 position = Vector2( -74, 67 )
 rotation = -0.00722313
 
-[node name="Tanc2" parent="Mapa/Enemics2/Tanc2" instance=ExtResource( 1 )]
+[node name="Tanc2" parent="Mapa/Enemics/Tanc2" instance=ExtResource( 1 )]
 position = Vector2( -48.8615, -19.3534 )
 scale = Vector2( 0.25, 0.25 )
 
-[node name="Tanc3" type="PathFollow2D" parent="Mapa/Enemics2"]
+[node name="Tanc3" type="PathFollow2D" parent="Mapa/Enemics"]
 position = Vector2( -74, 67 )
 rotation = -0.00722313
 
-[node name="Tanc3" parent="Mapa/Enemics2/Tanc3" instance=ExtResource( 9 )]
+[node name="Tanc3" parent="Mapa/Enemics/Tanc3" instance=ExtResource( 9 )]
 position = Vector2( -217.283, 38.4315 )
 scale = Vector2( 0.25, 0.25 )
