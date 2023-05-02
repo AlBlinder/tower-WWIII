@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/623175__aphom000__button-click-selection.wav-5c21bc04200488346959c7bce65baf34.sample"
+
+[deps]
+
+source_file="res://Audio/623175__aphom000__button-click-selection.wav"
+dest_files=[ "res://.import/623175__aphom000__button-click-selection.wav-5c21bc04200488346959c7bce65baf34.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

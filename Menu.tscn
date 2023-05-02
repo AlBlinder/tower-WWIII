@@ -1,10 +1,13 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Fonts/Kenney Mini Square Mono.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://UI/Fons/Fons__.jpg" type="Texture" id=2]
+[ext_resource path="res://Audio/422836__gamedevc__g_ui_button_hover_1.wav" type="AudioStream" id=3]
 [ext_resource path="res://UI/Altres/PNG/grey_button15.png" type="Texture" id=4]
 [ext_resource path="res://UI/Altres/PNG/green_button00.png" type="Texture" id=5]
+[ext_resource path="res://Menu.gd" type="Script" id=6]
 [ext_resource path="res://UI/Altres/PNG/yellow_button00.png" type="Texture" id=7]
+[ext_resource path="res://Audio/623175__aphom000__button-click-selection.wav" type="AudioStream" id=8]
 
 [sub_resource type="DynamicFont" id=4]
 size = 150
@@ -21,6 +24,7 @@ font_data = ExtResource( 1 )
 [node name="Menu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 6 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
 anchor_right = 1.0
@@ -122,3 +126,14 @@ custom_fonts/font = SubResource( 2 )
 text = "quit"
 align = 1
 valign = 1
+
+[node name="soroll_boto" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="clicar_boto" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/juga" to="." method="_on_juga_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/credits" to="." method="_on_credits_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/surt" to="." method="_on_surt_mouse_entered"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/surt" to="." method="_on_surt_pressed"]
