@@ -8,5 +8,11 @@ func _process(delta):
 func gira():
 	var posicio_enemic = get_global_mouse_position()
 	get_node("Torreta").look_at(posicio_enemic)
-	
 	rotation_degrees += 90
+	
+func _on_A_body_entered(body):
+	pass # Replace with function body.
+
+
+func _on_A_body_exited(body):
+	pass # Replace with function body.
