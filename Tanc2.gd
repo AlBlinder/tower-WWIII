@@ -11,7 +11,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	offset += velocitat * delta
+	offset += velocitat * delta * 2
 
 func rota(angle):
 	if $KinematicBody2D.rotation_degrees > 360:

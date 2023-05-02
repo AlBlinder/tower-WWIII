@@ -1,13 +1,15 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Default size/towerDefense_tile181.png" type="Texture" id=1]
 [ext_resource path="res://Tanques/PNG/Weapon_Color_A/Gun_07.png" type="Texture" id=2]
+[ext_resource path="res://Torretes/Torre3.gd" type="Script" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 171.643
 
 [node name="Torre3" type="Node2D"]
 scale = Vector2( 0.7, 0.7 )
+script = ExtResource( 3 )
 
 [node name="Base" type="Sprite" parent="."]
 scale = Vector2( 1.2, 1.2 )
