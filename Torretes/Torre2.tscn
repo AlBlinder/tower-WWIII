@@ -30,3 +30,6 @@ position = Vector2( -8, -125 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="A"]
 shape = SubResource( 1 )
+
+[connection signal="body_entered" from="A" to="." method="_on_A_body_entered"]
+[connection signal="body_exited" from="A" to="." method="_on_A_body_exited"]
