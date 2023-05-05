@@ -2,8 +2,6 @@ extends Node
 
 
 
-
-
 func _ready():
 	get_node("Menu/MarginContainer/VBoxContainer/juga").connect("pressed", self, "clicar_juga")
 	get_node("Menu/MarginContainer/VBoxContainer/surt").connect("pressed", self, "clicar_surt")
