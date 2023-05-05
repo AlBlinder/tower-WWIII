@@ -19,13 +19,13 @@ position = Vector2( 0, 80 )
 [node name="Torretes" type="Node2D" parent="Mapa"]
 
 [node name="Torre 1" parent="Mapa/Torretes" instance=ExtResource( 3 )]
-position = Vector2( 225, 338 )
+position = Vector2( 259, 359 )
 
 [node name="Torre2" parent="Mapa/Torretes" instance=ExtResource( 5 )]
-position = Vector2( 719, 173 )
+position = Vector2( 607, 137 )
 
 [node name="Torre3" parent="Mapa/Torretes" instance=ExtResource( 7 )]
-position = Vector2( 1000, 321 )
+position = Vector2( 968, 357 )
 
 [node name="Enemics" type="Path2D" parent="Mapa"]
 curve = SubResource( 1 )
