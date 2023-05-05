@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
+[ext_resource path="res://Interficie.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Mapa.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Torretes/Torre1.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Torretes/Torre2.tscn" type="PackedScene" id=5]
@@ -30,3 +31,5 @@ position = Vector2( 968, 357 )
 [node name="Enemics" type="Path2D" parent="Mapa"]
 curve = SubResource( 1 )
 script = ExtResource( 6 )
+
+[node name="CanvasLayer" parent="." instance=ExtResource( 1 )]
