@@ -38,7 +38,7 @@ scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 5 )
 
 [node name="Sprite5" type="Sprite" parent="Containers"]
-position = Vector2( 1189, 567 )
+position = Vector2( 1173, 551 )
 rotation = -1.4748
 scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 5 )
@@ -61,52 +61,52 @@ scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 8 )
 
 [node name="Sprite" type="Sprite" parent="Barreres"]
-position = Vector2( 106, 56 )
+position = Vector2( 67, 345 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 8 )
 
 [node name="Sprite2" type="Sprite" parent="Barreres"]
-position = Vector2( 106, 135 )
+position = Vector2( 672, 863 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 8 )
 
 [node name="Sprite3" type="Sprite" parent="Barreres"]
-position = Vector2( 106, 135 )
+position = Vector2( 918, 501 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 8 )
 
 [node name="Sprite4" type="Sprite" parent="Barreres"]
-position = Vector2( 113, 33 )
+position = Vector2( 80, 391 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 8 )
 
 [node name="Sprite5" type="Sprite" parent="Barreres"]
-position = Vector2( 112, 159 )
+position = Vector2( 1013, 536 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 8 )
 
 [node name="Sprite6" type="Sprite" parent="Barreres"]
-position = Vector2( 125, 180 )
+position = Vector2( 964, 513 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 8 )
 
 [node name="Sprite7" type="Sprite" parent="Barreres"]
-position = Vector2( 127, 13 )
+position = Vector2( 1787, 337 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 8 )
 
 [node name="Sprite11" type="Sprite" parent="Barreres"]
-position = Vector2( 67, 255 )
+position = Vector2( 65, 265 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 8 )
 
 [node name="Sprite12" type="Sprite" parent="Barreres"]
-position = Vector2( 94, 287 )
+position = Vector2( 83, 311 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 8 )
 
 [node name="Sprite13" type="Sprite" parent="Barreres"]
-position = Vector2( 69, 323 )
+position = Vector2( 711, 879 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 8 )
 
