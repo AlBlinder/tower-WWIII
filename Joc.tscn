@@ -1,19 +1,14 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Tanc2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Mapa.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Torretes/Torre1.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Tanc1.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Torretes/Torre2.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Interficie.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Enemics.gd" type="Script" id=6]
 [ext_resource path="res://Torretes/Torre3.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Tanc3.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Tanc2.gd" type="Script" id=10]
-[ext_resource path="res://Tanc3.gd" type="Script" id=11]
 
 [sub_resource type="Curve2D" id=1]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, -74, 67, 0, 0, 0, 0, 386, 67, 0, 0, 0, 0, 1571, 67, -11.3012, -12.9919, 11.3012, 12.9919, 1712, 78, 0, 0, 0, 0, 1718, 166, 11.5124, -9.3754, -11.5124, 9.3754, 1710, 255, 0, 0, 0, 0, 1545, 259, 0, 0, 0, 0, 259, 259, 13.1669, -10.9609, -13.1669, 10.9609, 176, 266, 0, 0, 0, 0, 163, 320, 0, 0, 0, 0, 163, 394, -12.9601, -13.8563, 12.9601, 13.8563, 171, 445, 0, 0, 0, 0, 244, 451, 0, 0, 0, 0, 1604, 451, -12.0556, -14.1055, 12.0556, 14.1055, 1651, 461, 0, 0, 0, 0, 1661, 491, 0, 0, 0, 0, 1661, 566, 14.4767, -12.4086, -14.4767, 12.4086, 1649, 614, 0, 0, 0, 0, 1603, 624, 0, 0, 0, 0, 221, 624, 12.311, -11.4661, -12.311, 11.4661, 152, 631, 0, 0, 0, 0, 144, 664, 0, 0, 0, 0, 144, 759, -11.3746, -13.7873, 11.3746, 13.7873, 151, 789, 0, 0, 0, 0, 218, 797, 0, 0, 0, 0, 2084, 797 )
+"points": PoolVector2Array( 0, 0, 0, 0, -74, 67, 0, 0, 0, 0, 386, 67, -17.0432, -0.374577, 17.0432, 0.374577, 1691, 67, -0.187288, -25.4712, 0.187288, 25.4712, 1718, 93, 0, -19.522, 0, 19.522, 1718, 233, 21.5243, 0, -21.5243, 0, 1693, 259, 14.9226, -0.222725, -14.9226, 0.222725, 187, 259, -0.445449, -18.7089, 0.445449, 18.7089, 163, 283, -0.235969, -13.9221, 0.235969, 13.9221, 163, 426, -22.181, -0.235969, 22.181, 0.235969, 190, 451, -19.0215, -0.166855, 19.0215, 0.166855, 1636, 451, 0.166855, -22.3586, -0.166855, 22.3586, 1661, 476, 0, 0, 0, 0, 1660, 541, -0.166855, -18.8546, 0.166855, 18.8546, 1661, 598, 17.6866, 0, -17.6866, 0, 1636, 624, 21.0237, 0, -21.0237, 0, 169, 624, -0.166855, -16.5186, 0.166855, 16.5186, 144, 650, 0.33371, -16.3518, -0.33371, 16.3518, 144, 770, -18.6878, -0.834275, 18.6878, 0.834275, 171, 797, 0, 0, 0, 0, 2084, 797 )
 }
 
 [node name="Joc" type="Node2D"]
@@ -24,30 +19,14 @@ position = Vector2( 0, 80 )
 [node name="Torretes" type="Node2D" parent="Mapa"]
 
 [node name="Torre 1" parent="Mapa/Torretes" instance=ExtResource( 3 )]
-position = Vector2( 225, 338 )
+position = Vector2( 259, 359 )
 
 [node name="Torre2" parent="Mapa/Torretes" instance=ExtResource( 5 )]
-position = Vector2( 719, 173 )
+position = Vector2( 607, 137 )
 
 [node name="Torre3" parent="Mapa/Torretes" instance=ExtResource( 7 )]
-position = Vector2( 1000, 321 )
+position = Vector2( 968, 357 )
 
 [node name="Enemics" type="Path2D" parent="Mapa"]
 curve = SubResource( 1 )
-
-[node name="T1" parent="Mapa/Enemics" instance=ExtResource( 4 )]
-position = Vector2( -74, 67 )
-scale = Vector2( 0.25, 0.25 )
-
-[node name="T2" parent="Mapa/Enemics" instance=ExtResource( 1 )]
-position = Vector2( -74, 67 )
-scale = Vector2( 0.25, 0.25 )
-script = ExtResource( 10 )
-
-[node name="T3" parent="Mapa/Enemics" instance=ExtResource( 9 )]
-position = Vector2( -74, 67 )
-rotation = 0.0
-scale = Vector2( 0.25, 0.25 )
-script = ExtResource( 11 )
-
-[node name="Interficie" parent="." instance=ExtResource( 6 )]
+script = ExtResource( 6 )
