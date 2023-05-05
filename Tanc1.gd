@@ -13,13 +13,3 @@ func _ready():
 func _process(delta):
 	offset += velocitat * delta
 
-func rota(angle):
-	if $KinematicBody2D.rotation_degrees > 360:
-		$KinematicBody2D.rotation_degrees -= 360
-	$KinematicBody2D.rotation_degrees += angle
-
-func avanca():
-	moviment = $KinematicBody2D.move_and_slide(moviment)
-	$KinematicBody2D.position += $KinematicBody2D.transform.x * velocitat
-	
-	
