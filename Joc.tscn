@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Interficie.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Mapa.tscn" type="PackedScene" id=2]
@@ -8,6 +8,33 @@
 [ext_resource path="res://Enemics.gd" type="Script" id=6]
 [ext_resource path="res://Torretes/Torre3.tscn" type="PackedScene" id=7]
 
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 926.5, 29 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 787.5, 28.5 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 778, 29 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 806.5, 29 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 916.5, 29 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 29.5, 58 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 29.375, 58 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 28.75, 67 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 29, 67 )
+
 [sub_resource type="Curve2D" id=1]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -74, 67, 0, 0, 0, 0, 386, 67, -17.0432, -0.374577, 17.0432, 0.374577, 1691, 67, -0.187288, -25.4712, 0.187288, 25.4712, 1718, 93, 0, -19.522, 0, 19.522, 1718, 233, 21.5243, 0, -21.5243, 0, 1693, 259, 14.9226, -0.222725, -14.9226, 0.222725, 187, 259, -0.445449, -18.7089, 0.445449, 18.7089, 163, 283, -0.235969, -13.9221, 0.235969, 13.9221, 163, 426, -22.181, -0.235969, 22.181, 0.235969, 190, 451, -19.0215, -0.166855, 19.0215, 0.166855, 1636, 451, 0.166855, -22.3586, -0.166855, 22.3586, 1661, 476, 0, 0, 0, 0, 1660, 541, -0.166855, -18.8546, 0.166855, 18.8546, 1661, 598, 17.6866, 0, -17.6866, 0, 1636, 624, 21.0237, 0, -21.0237, 0, 169, 624, -0.166855, -16.5186, 0.166855, 16.5186, 144, 650, 0.33371, -16.3518, -0.33371, 16.3518, 144, 770, -18.6878, -0.834275, 18.6878, 0.834275, 171, 797, 0, 0, 0, 0, 2084, 797 )
@@ -16,6 +43,71 @@ _data = {
 [node name="Joc" type="Node2D"]
 position = Vector2( 0, 80 )
 script = ExtResource( 4 )
+
+[node name="no_construccio" type="Node2D" parent="."]
+position = Vector2( 1019, 797 )
+
+[node name="A" type="Area2D" parent="no_construccio"]
+
+[node name="1" type="CollisionShape2D" parent="no_construccio/A"]
+position = Vector2( 22.5, 0 )
+shape = SubResource( 2 )
+
+[node name="A2" type="Area2D" parent="no_construccio"]
+position = Vector2( -99, -173 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="no_construccio/A2"]
+position = Vector2( -17.5, -0.5 )
+shape = SubResource( 3 )
+
+[node name="A3" type="Area2D" parent="no_construccio"]
+position = Vector2( -48, -346 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="no_construccio/A3"]
+position = Vector2( -59, 0 )
+shape = SubResource( 4 )
+
+[node name="A4" type="Area2D" parent="no_construccio"]
+position = Vector2( 96, -538 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="no_construccio/A4"]
+position = Vector2( -174.5, 0 )
+shape = SubResource( 5 )
+
+[node name="A5" type="Area2D" parent="no_construccio"]
+position = Vector2( -58, -730 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="no_construccio/A5"]
+position = Vector2( -130.5, 0 )
+shape = SubResource( 6 )
+
+[node name="A6" type="Area2D" parent="no_construccio"]
+position = Vector2( -875, -94 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="no_construccio/A6"]
+position = Vector2( 0.5, 7 )
+shape = SubResource( 7 )
+
+[node name="A7" type="Area2D" parent="no_construccio"]
+position = Vector2( 642, -250 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="no_construccio/A7"]
+position = Vector2( -0.375, -10 )
+shape = SubResource( 8 )
+
+[node name="A8" type="Area2D" parent="no_construccio"]
+position = Vector2( -856, -446 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="no_construccio/A8"]
+position = Vector2( -0.25, 4 )
+shape = SubResource( 9 )
+
+[node name="A9" type="Area2D" parent="no_construccio"]
+position = Vector2( 699, -635 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="no_construccio/A9"]
+position = Vector2( 0, 1 )
+shape = SubResource( 10 )
 
 [node name="Mapa" parent="." instance=ExtResource( 2 )]
 
@@ -35,3 +127,7 @@ curve = SubResource( 1 )
 script = ExtResource( 6 )
 
 [node name="interficie" parent="." instance=ExtResource( 1 )]
+
+[connection signal="mouse_entered" from="no_construccio/A" to="." method="_on_A_mouse_entered"]
+[connection signal="mouse_exited" from="no_construccio/A" to="." method="_on_A_mouse_exited"]
+[connection signal="mouse_entered" from="no_construccio/A2" to="." method="_on_A2_mouse_entered"]

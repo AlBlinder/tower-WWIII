@@ -2,31 +2,59 @@ extends Node2D
 
 
 var diccionari  = {1:"res://Torretes/Torre1.tscn", 2: "res://Torretes/Torre2.tscn", 3:"res://Torretes/Torre3.tscn"}
-# Called when the node enters the scene tree for the first time.
+var mode_construccio = false
+var torreta
+var control
+var possible = true
+
 func _ready():	
-	get_node("interficie/Control/Botons_torretes/boto_t1").connect("pressed", self,	"crea", [1])
-	get_node("interficie/Control/Botons_torretes/boto_t2").connect("pressed", self,	"crea", [2])
-	get_node("interficie/Control/Botons_torretes/boto_t3").connect("pressed", self,	"crea", [3])
-	 # Replace with function body.
+	get_node("interficie/Control/Botons_torretes/boto_t1").connect("pressed", self,	"carrega", [1])
+	get_node("interficie/Control/Botons_torretes/boto_t2").connect("pressed", self,	"carrega", [2])
+	get_node("interficie/Control/Botons_torretes/boto_t3").connect("pressed", self,	"carrega", [3])
+	 
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
-	
-func crea(tipus):
-	var torreta = load(diccionari[tipus]).instance()
-	var control = Control.new()
-	var pos = get_global_mouse_position()
-	get_node("interficie").add_child(control, true)
+	if mode_construccio:
+		crea()
+	print(possible)
+
+func carrega(tipus):
+	torreta = load(diccionari[tipus]).instance()
+	if not mode_construccio:
+		mode_construccio = true
+	if not control:
+		control = Control.new()
+		get_node("interficie").add_child(control, true)
+		control.set_name("visualització_torres")
+
+	for i in control.get_children():
+		i.queue_free()
 	
 	control.add_child(torreta, true)
-	control.rect_position = pos
-	control.set_name("visualització_torres")
 	move_child(get_node("visualització_torres"), 0)
-
 	
-
-
-
-
+func crea():
+	var pos = get_global_mouse_position()
+	control.rect_position = pos
+	
+	if possible:
+		torreta.modulate = "ad54ff3c"
+	else:
+		torreta.modulate = "adff4545"
+	
+func _input(event):
+	if event.is_action_pressed("boto_dret") and mode_construccio == true:
+		cancela()
+		
+func cancela():
+	mode_construccio = false
+	control.queue_free()
+	control = false
+	
+func _on_A_mouse_entered():
+	possible = false
+func _on_A_mouse_exited():
+	possible = true 
+func _on_A2_mouse_entered():
+	print("AA") 
