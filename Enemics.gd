@@ -5,7 +5,7 @@ var tancs = [preload("res://Tanc1.tscn"), preload("res://Tanc2.tscn"), preload("
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	crea_enemic(1,2,1)
+	crea_enemic(1,4,1)
 
 func _process(delta):
 	pass

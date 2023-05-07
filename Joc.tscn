@@ -114,7 +114,7 @@ shape = SubResource( 10 )
 [node name="Torretes" type="Node2D" parent="Mapa"]
 
 [node name="Torre 1" parent="Mapa/Torretes" instance=ExtResource( 3 )]
-position = Vector2( 259, 359 )
+position = Vector2( 309, 177 )
 
 [node name="Torre2" parent="Mapa/Torretes" instance=ExtResource( 5 )]
 position = Vector2( 607, 137 )

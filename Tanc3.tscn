@@ -10,6 +10,7 @@ extents = Vector2( 81, 127.5 )
 
 [node name="PathFollow2D" type="PathFollow2D"]
 rotation = -1.5708
+scale = Vector2( 0.25, 0.25 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 rotation = 1.5708

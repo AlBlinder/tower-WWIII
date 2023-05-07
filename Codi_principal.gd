@@ -17,7 +17,6 @@ func _ready():
 func _process(delta):
 	if mode_construccio:
 		crea()
-	print(possible)
 
 func carrega(tipus):
 	torreta = load(diccionari[tipus]).instance()
