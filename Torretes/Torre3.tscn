@@ -23,6 +23,8 @@ offset = Vector2( 0, -50 )
 [node name="Barril2" type="Position2D" parent="Torreta"]
 position = Vector2( 0, -165 )
 
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Torreta/Barril2"]
+
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]

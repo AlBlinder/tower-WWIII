@@ -49,15 +49,21 @@ texture = ExtResource( 1 )
 offset = Vector2( 0, -40 )
 
 [node name="Barril1" type="Position2D" parent="Torreta"]
-position = Vector2( 9, -125 )
+position = Vector2( 9, -200 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Torreta/Barril1"]
+visible = false
+position = Vector2( 0, 29.4286 )
+scale = Vector2( 1, 1.45982 )
 frames = SubResource( 3 )
 
 [node name="Barril2" type="Position2D" parent="Torreta"]
-position = Vector2( -8, -125 )
+position = Vector2( -8, -200 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Torreta/Barril2"]
+visible = false
+position = Vector2( 0, 29.0714 )
+scale = Vector2( 1, 1.45424 )
 frames = SubResource( 4 )
 
 [node name="A" type="Area2D" parent="."]

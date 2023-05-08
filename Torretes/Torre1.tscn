@@ -3,7 +3,7 @@
 [ext_resource path="res://Tanques/PNG/Weapon_Color_A/Gun_03.png" type="Texture" id=1]
 [ext_resource path="res://Default size/towerDefense_tile181.png" type="Texture" id=2]
 [ext_resource path="res://Torretes/Torre1.gd" type="Script" id=3]
-[ext_resource path="res://Tanques/PNG/Effects/Medium_Shell.png" type="Texture" id=4]
+[ext_resource path="res://Tanques/PNG/Effects/Plasma.png" type="Texture" id=4]
 [ext_resource path="res://Tanques/PNG/Effects/Smoke_A.png" type="Texture" id=5]
 [ext_resource path="res://Tanques/PNG/Effects/Smoke_B.png" type="Texture" id=6]
 [ext_resource path="res://Tanques/PNG/Effects/Smoke_C.png" type="Texture" id=7]
@@ -92,8 +92,8 @@ position = Vector2( 2.44784e-05, -140 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Torreta/Barril"]
 visible = false
-position = Vector2( -64, -130 )
-scale = Vector2( 0.5, 0.5 )
+position = Vector2( -65.801, -150 )
+scale = Vector2( 1.02679, 1.25 )
 frames = SubResource( 2 )
 speed_scale = 3.5
 centered = false
