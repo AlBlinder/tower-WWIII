@@ -129,3 +129,5 @@ position = Vector2( 699, -635 )
 [node name="forma" type="CollisionShape2D" parent="no_construccio/Area9"]
 position = Vector2( 0, 1 )
 shape = SubResource( 10 )
+
+[connection signal="area_entered" from="no_construccio/Area" to="." method="_on_Area_area_entered"]
