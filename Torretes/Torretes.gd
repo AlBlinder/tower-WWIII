@@ -4,7 +4,7 @@ var built = false
 var pot_disparar = true
 var dades_torres = {
 	"T1": {
-		"mal": 2000,
+		"mal": 20,
 		"Area": 350,
 		"temps_recarrega": 2},
 	"T2": {

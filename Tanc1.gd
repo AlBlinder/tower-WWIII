@@ -3,7 +3,7 @@ extends PathFollow2D
 
 var moviment := Vector2(1,1)
 var velocitat := 100
-var punts_vida := 100
+var punts_vida := 200
 onready var barra_vida := get_node("barra_vida")
 
 

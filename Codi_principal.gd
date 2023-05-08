@@ -20,11 +20,12 @@ func _process(delta):
 
 func carrega(tipus):
 	torreta = load(diccionari[tipus]).instance()
+	
 	if not mode_construccio:
 		mode_construccio = true
 	if not control:
 		control = Control.new()
-		get_node("interficie").add_child(control, true)
+		get_node("interficie").add_child(control)
 		control.set_name("visualització_torres")
 
 	for i in control.get_children():
@@ -51,9 +52,3 @@ func cancela():
 	control.queue_free()
 	control = false
 	
-func _on_A_mouse_entered():
-	possible = false
-func _on_A_mouse_exited():
-	possible = true 
-func _on_A2_mouse_entered():
-	print("AA") 

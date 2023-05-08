@@ -101,14 +101,8 @@ margin_bottom = 40.0
 margin_right = 1900.0
 
 [connection signal="mouse_entered" from="Control/Botons_torretes/boto_t1" to="Control" method="_on_boto_t1_mouse_entered"]
-[connection signal="mouse_entered" from="Control/Botons_torretes/boto_t1" to="Control/Botons_torretes" method="_on_boto_t1_mouse_entered"]
 [connection signal="pressed" from="Control/Botons_torretes/boto_t1" to="Control" method="_on_boto_t1_pressed"]
-[connection signal="pressed" from="Control/Botons_torretes/boto_t1" to="Control/Botons_torretes" method="_on_boto_t1_pressed"]
 [connection signal="mouse_entered" from="Control/Botons_torretes/boto_t2" to="Control" method="_on_boto_t2_mouse_entered"]
-[connection signal="mouse_entered" from="Control/Botons_torretes/boto_t2" to="Control/Botons_torretes" method="_on_boto_t2_mouse_entered"]
 [connection signal="pressed" from="Control/Botons_torretes/boto_t2" to="Control" method="_on_boto_t2_pressed"]
-[connection signal="pressed" from="Control/Botons_torretes/boto_t2" to="Control/Botons_torretes" method="_on_boto_t2_pressed"]
 [connection signal="mouse_entered" from="Control/Botons_torretes/boto_t3" to="Control" method="_on_boto_t3_mouse_entered"]
-[connection signal="mouse_entered" from="Control/Botons_torretes/boto_t3" to="Control/Botons_torretes" method="_on_boto_t3_mouse_entered"]
 [connection signal="pressed" from="Control/Botons_torretes/boto_t3" to="Control" method="_on_boto_t3_pressed"]
-[connection signal="pressed" from="Control/Botons_torretes/boto_t3" to="Control/Botons_torretes" method="_on_boto_t3_pressed"]
