@@ -52,3 +52,8 @@ func cancela():
 	control.queue_free()
 	control = false
 	
+
+
+func _on_Area_area_entered(area):
+	print(area.get_name())
+	possible = false # Replace with function body.
