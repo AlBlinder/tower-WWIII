@@ -13,7 +13,7 @@
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
 "frames": [ ExtResource( 8 ), ExtResource( 5 ), ExtResource( 9 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 7 ) ],
-"loop": true,
+"loop": false,
 "name": "default",
 "speed": 15.0
 } ]
@@ -57,6 +57,7 @@ offset = Vector2( 0, -40 )
 position = Vector2( 9, -200 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Torreta/Barril1"]
+visible = false
 position = Vector2( 0, 29.4286 )
 scale = Vector2( 1, 1.45982 )
 frames = SubResource( 3 )
@@ -65,6 +66,7 @@ frames = SubResource( 3 )
 position = Vector2( -8, -200 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Torreta/Barril2"]
+visible = false
 position = Vector2( 0, 29.0714 )
 scale = Vector2( 1, 1.45424 )
 frames = SubResource( 4 )
