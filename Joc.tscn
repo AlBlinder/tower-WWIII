@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Interficie.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Mapa.tscn" type="PackedScene" id=2]
@@ -7,11 +7,16 @@
 [ext_resource path="res://Torretes/Torre2.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Enemics.gd" type="Script" id=6]
 [ext_resource path="res://Torretes/Torre3.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Fonts/Kenney Mini.ttf" type="DynamicFontData" id=8]
 
 [sub_resource type="Curve2D" id=1]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, -74, 67, 0, 0, 0, 0, 386, 67, -17.0432, -0.374577, 17.0432, 0.374577, 1691, 67, -0.187288, -25.4712, 0.187288, 25.4712, 1718, 93, 0, -19.522, 0, 19.522, 1718, 233, 21.5243, 0, -21.5243, 0, 1693, 259, 14.9226, -0.222725, -14.9226, 0.222725, 187, 259, -0.445449, -18.7089, 0.445449, 18.7089, 163, 283, -0.235969, -13.9221, 0.235969, 13.9221, 163, 426, -22.181, -0.235969, 22.181, 0.235969, 190, 451, -19.0215, -0.166855, 19.0215, 0.166855, 1636, 451, 0.166855, -22.3586, -0.166855, 22.3586, 1661, 476, 0, 0, 0, 0, 1660, 541, -0.166855, -18.8546, 0.166855, 18.8546, 1661, 598, 17.6866, 0, -17.6866, 0, 1636, 624, 21.0237, 0, -21.0237, 0, 169, 624, -0.166855, -16.5186, 0.166855, 16.5186, 144, 650, 0.33371, -16.3518, -0.33371, 16.3518, 144, 770, -18.6878, -0.834275, 18.6878, 0.834275, 171, 797, 0, 0, 0, 0, 2084, 797 )
 }
+
+[sub_resource type="DynamicFont" id=11]
+size = 500
+font_data = ExtResource( 8 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 926.5, 29 )
@@ -60,6 +65,26 @@ position = Vector2( 968, 357 )
 [node name="Enemics" type="Path2D" parent="Mapa"]
 curve = SubResource( 1 )
 script = ExtResource( 6 )
+
+[node name="Ones" type="Label" parent="Mapa/Enemics"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 55.0
+margin_top = 18.0
+margin_right = 1869.0
+margin_bottom = 643.0
+custom_colors/font_color = Color( 0.72549, 0.67451, 0.141176, 1 )
+custom_colors/font_color_shadow = Color( 0.0666667, 0.0588235, 0.0588235, 1 )
+custom_constants/shadow_offset_x = 25
+custom_constants/shadow_offset_y = 25
+custom_constants/shadow_as_outline = 1
+custom_fonts/font = SubResource( 11 )
+text = "WAVE X"
+align = 1
+valign = 1
+max_lines_visible = 0
 
 [node name="interficie" parent="." instance=ExtResource( 1 )]
 
