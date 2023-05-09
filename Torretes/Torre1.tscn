@@ -117,7 +117,6 @@ anims/RESET = SubResource( 4 )
 
 [node name="espai" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( -6.81196e-07, -20.7143 )
-scale = Vector2( 1, 1 )
 shape = SubResource( 5 )
 
 [connection signal="body_entered" from="A" to="." method="_on_A_body_entered"]

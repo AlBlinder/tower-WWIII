@@ -51,6 +51,7 @@ func cancela():
 	mode_construccio = false
 	control.queue_free()
 	control = false
+	print("w")
 	
 
 
