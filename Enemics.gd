@@ -6,8 +6,11 @@ var tancs = [preload("res://Tanc1.tscn"), preload("res://Tanc2.tscn"), preload("
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	ona1()
+<<<<<<< Updated upstream
 	$Ones.visible_characters = 0
 	
+=======
+>>>>>>> Stashed changes
 	#crea_enemic(1,4,1)
 
 func _process(delta):
@@ -18,6 +21,7 @@ func crea_enemic(tipus, numero, temps):
 		yield(get_tree().create_timer(temps), "timeout")
 		var enemic_nou = tancs[tipus-1].instance()
 		add_child(enemic_nou)
+<<<<<<< Updated upstream
 		
 	
 func text_wave(num):
@@ -73,4 +77,10 @@ func ona10():
 	crea_enemic(1, 4, 5)
 	crea_enemic(1, 4, 5)
 
+=======
+		yield(get_tree().create_timer(temps), "timeout")
+		
+func ona1():
+	var label = 
+>>>>>>> Stashed changes
 
