@@ -41,7 +41,7 @@ func _on_A_body_exited(body):
 	
 func dispara(llista):
 	pot_disparar = false
-	if self.tipus == "T1":
+	if self.tipus == "T1" or self.tipus == "T2" or self.tipus == "T3":
 		get_node("AnimationPlayer").play("Dispara")
 	llista[0].tocat(dades_torres[self.tipus]["mal"])
 	yield(get_tree().create_timer(dades_torres[self.tipus]["temps_recarrega"]), "timeout")
