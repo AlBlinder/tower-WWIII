@@ -55,5 +55,7 @@ func cancela():
 
 
 func _on_Area_area_entered(area):
-	print(area.get_name())
-	possible = false # Replace with function body.
+	if area.get_name() == "Area2D":
+		possible = false
+	else:
+		possible = true# Replace with function body.
