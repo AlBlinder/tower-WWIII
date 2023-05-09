@@ -75,10 +75,17 @@ margin_left = 55.0
 margin_top = 18.0
 margin_right = 1869.0
 margin_bottom = 643.0
+custom_colors/font_color = Color( 0.72549, 0.67451, 0.141176, 1 )
+custom_colors/font_color_shadow = Color( 0.0666667, 0.0588235, 0.0588235, 1 )
+custom_constants/shadow_offset_x = 25
+custom_constants/shadow_offset_y = 25
+custom_constants/shadow_as_outline = 1
 custom_fonts/font = SubResource( 11 )
 text = "WAVE X"
 align = 1
 valign = 1
+percent_visible = -0.2
+max_lines_visible = 0
 
 [node name="interficie" parent="." instance=ExtResource( 1 )]
 
