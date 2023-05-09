@@ -18,7 +18,7 @@ func crea_enemic(tipus, numero, temps):
 		yield(get_tree().create_timer(temps), "timeout")
 		
 func ona1():
-	text = "ONA 1"
+	$Ones.text = "ONA 1"
 	crea_enemic(1, 2, 5)
 	yield(get_tree().create_timer(2), "timeout")
 	crea_enemic(1, 1, 1)

@@ -77,6 +77,8 @@ margin_right = 1869.0
 margin_bottom = 643.0
 custom_fonts/font = SubResource( 11 )
 text = "WAVE X"
+align = 1
+valign = 1
 
 [node name="interficie" parent="." instance=ExtResource( 1 )]
 
