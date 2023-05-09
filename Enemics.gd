@@ -23,11 +23,12 @@ func crea_enemic(tipus, numero, temps):
 		
 	
 func text_wave(num):
+	$Ones.text = "WAVE " + str(num)
 	for i in range(5):
 		$Ones.visible_characters +=1
 		yield(get_tree().create_timer(0.2), "timeout")
 	$Ones.visible_characters = -1
-	$Ones.text = "Wave {num}"	
+
 	yield(get_tree().create_timer(3), "timeout")
 	$Ones.visible_characters = 0
 		
@@ -36,21 +37,24 @@ func ona1():
 	crea_enemic(1, 2, 5)
 	yield(get_tree().create_timer(2), "timeout")
 	crea_enemic(1, 1, 1)
+	ona2()
 	
 func ona2():
-	text = "ONA 2"
+	text_wave(2)
 	crea_enemic(1, 4, 2)
+
 	
 func ona3():
-	text = "ONA 3"
+	text_wave(3)
 	crea_enemic(1, 4, 5)
+
 	
 func ona4():
-	text = "ONA 4"
+	text_wave(4)
 	crea_enemic(1, 4, 5)
 	
 func ona5():
-	text = "ONA 5"
+	text_wave(5)
 	crea_enemic(1, 4, 5)
 	
 func ona6():
