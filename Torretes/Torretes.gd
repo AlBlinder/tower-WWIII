@@ -16,13 +16,20 @@ var dades_torres = {
 		"Area": 500,
 		"temps_recarrega": 3}
 }
+export var possible := false
+var llista := ["ocupat", "Area", "Area1", "Area2", "Area3", "Area4", "Area5", "Area6", "Area7", "Area8", "Area9"]
+var ara := []
+
 
 func _ready():
 	pass
 	
 func _process(delta):
 	gira()
-
+	if ara.size() <= 0:
+		possible = true
+	else:
+		possible = false
 func gira():
 	if enemic_llista.size() == 0:
 		return
@@ -30,7 +37,6 @@ func gira():
 	$Torreta.look_at(posicio_enemic)
 
 	if pot_disparar:
-		print(enemic_llista)
 		dispara(enemic_llista)
 	rotation_degrees += 90
 	
@@ -48,5 +54,15 @@ func dispara(llista):
 		get_node("AnimationPlayer").play("Dispara")
 	llista[0].tocat(dades_torres[self.tipus]["mal"])
 	yield(get_tree().create_timer(dades_torres[self.tipus]["temps_recarrega"]), "timeout")
-
 	pot_disparar = true
+	
+	
+func _on_ocupat_area_entered(area):
+	if area.get_name() in llista:
+		ara.append(area.get_name())
+
+func _on_ocupat_area_exited(area):
+	if area.get_name() in llista:
+		ara.erase(area.get_name())
+
+

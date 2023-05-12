@@ -57,7 +57,7 @@ script = ExtResource( 4 )
 position = Vector2( 309, 177 )
 
 [node name="Torre2" parent="Mapa/Torretes" instance=ExtResource( 5 )]
-position = Vector2( 607, 137 )
+position = Vector2( 610, 146 )
 
 [node name="Torre3" parent="Mapa/Torretes" instance=ExtResource( 7 )]
 position = Vector2( 968, 357 )
@@ -69,6 +69,7 @@ script = ExtResource( 6 )
 [node name="CanvasLayer" type="CanvasLayer" parent="Mapa/Enemics"]
 
 [node name="Ones" type="Label" parent="Mapa/Enemics/CanvasLayer"]
+visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5

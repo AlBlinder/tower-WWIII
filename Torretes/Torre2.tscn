@@ -179,8 +179,8 @@ tracks/5/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 32.8572, 47.8571 )
+[sub_resource type="CircleShape2D" id=8]
+radius = 62.8734
 
 [node name="Torre2" type="Node2D"]
 scale = Vector2( 0.7, 0.7 )
@@ -208,11 +208,10 @@ playing = true
 position = Vector2( -8, -200 )
 
 [node name="B2" type="AnimatedSprite" parent="Torreta/Barril2"]
+visible = false
 position = Vector2( 0, 29.0714 )
 scale = Vector2( 1, 1.45424 )
 frames = SubResource( 4 )
-frame = 5
-playing = true
 
 [node name="A" type="Area2D" parent="."]
 
@@ -224,11 +223,12 @@ root_node = NodePath("../Torreta/Barril1/B1")
 anims/Dispara = SubResource( 6 )
 anims/RESET = SubResource( 7 )
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="ocupat" type="Area2D" parent="."]
 
-[node name="espai" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( -4.25747e-07, -13.5714 )
-shape = SubResource( 5 )
+[node name="espai" type="CollisionShape2D" parent="ocupat"]
+shape = SubResource( 8 )
 
 [connection signal="body_entered" from="A" to="." method="_on_A_body_entered"]
 [connection signal="body_exited" from="A" to="." method="_on_A_body_exited"]
+[connection signal="area_entered" from="ocupat" to="." method="_on_ocupat_area_entered"]
+[connection signal="area_exited" from="ocupat" to="." method="_on_ocupat_area_exited"]
