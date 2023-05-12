@@ -13,7 +13,7 @@
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
 "frames": [ ExtResource( 8 ), ExtResource( 5 ), ExtResource( 9 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 7 ) ],
-"loop": true,
+"loop": false,
 "name": "default",
 "speed": 15.0
 } ]
@@ -21,7 +21,7 @@ animations = [ {
 [sub_resource type="SpriteFrames" id=4]
 animations = [ {
 "frames": [ ExtResource( 8 ), ExtResource( 5 ), ExtResource( 9 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 7 ) ],
-"loop": true,
+"loop": false,
 "name": "default",
 "speed": 30.0
 } ]
@@ -31,7 +31,6 @@ radius = 191.434
 
 [sub_resource type="Animation" id=6]
 resource_name = "Dispara"
-length = 0.6
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:visible")
 tracks/0/interp = 1
@@ -39,34 +38,34 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.6 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ false, true, false ]
+"values": [ true ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("../../Barril2/B2:visible")
+tracks/1/path = NodePath("../../Barril2/AnimatedSprite:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.1, 0.6 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ false, true, false ]
+"values": [ true ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("../../Barril2/B2:playing")
+tracks/2/path = NodePath("../../Barril2/AnimatedSprite:playing")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.1, 0.6 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ false, true, false ]
+"values": [ true ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath(".:playing")
@@ -75,10 +74,10 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 0.1, 0.6 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ false, true, false ]
+"values": [ true ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath(".:frame")
@@ -93,7 +92,7 @@ tracks/4/keys = {
 "values": [ 0 ]
 }
 tracks/5/type = "value"
-tracks/5/path = NodePath("../../Barril2/B2:frame")
+tracks/5/path = NodePath("../../Barril2/AnimatedSprite:frame")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
@@ -120,7 +119,7 @@ tracks/0/keys = {
 "values": [ true ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("../../Barril2/B2:visible")
+tracks/1/path = NodePath("../../Barril2/AnimatedSprite:visible")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -132,7 +131,7 @@ tracks/1/keys = {
 "values": [ true ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("../../Barril2/B2:playing")
+tracks/2/path = NodePath("../../Barril2/AnimatedSprite:playing")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -168,7 +167,7 @@ tracks/4/keys = {
 "values": [ 0 ]
 }
 tracks/5/type = "value"
-tracks/5/path = NodePath("../../Barril2/B2:frame")
+tracks/5/path = NodePath("../../Barril2/AnimatedSprite:frame")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
@@ -184,7 +183,6 @@ tracks/5/keys = {
 extents = Vector2( 32.8572, 47.8571 )
 
 [node name="Torre2" type="Node2D"]
-position = Vector2( 145, 117 )
 scale = Vector2( 0.7, 0.7 )
 script = ExtResource( 3 )
 
@@ -213,6 +211,7 @@ position = Vector2( -8, -200 )
 position = Vector2( 0, 29.0714 )
 scale = Vector2( 1, 1.45424 )
 frames = SubResource( 4 )
+frame = 5
 playing = true
 
 [node name="A" type="Area2D" parent="."]

@@ -20,17 +20,14 @@ func _process(delta):
 
 func carrega(tipus):
 	torreta = load(diccionari[tipus]).instance()
-	
 	if not mode_construccio:
 		mode_construccio = true
 	if not control:
 		control = Control.new()
 		get_node("interficie").add_child(control)
 		control.set_name("visualització_torres")
-
 	for i in control.get_children():
 		i.queue_free()
-	
 	control.add_child(torreta, true)
 	move_child(get_node("visualització_torres"), 0)
 	
@@ -74,7 +71,7 @@ func _on_Area2_area_exited(area):
 		possible = true
 
 func _on_Area3_area_exited(area):
-	if area.get_parennt().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
+	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
 		possible = true 
 
 
