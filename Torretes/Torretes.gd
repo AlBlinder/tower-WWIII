@@ -22,7 +22,7 @@ func _ready():
 	
 func _process(delta):
 	gira()
-	
+
 func gira():
 	if enemic_llista.size() == 0:
 		return
@@ -30,14 +30,17 @@ func gira():
 	$Torreta.look_at(posicio_enemic)
 
 	if pot_disparar:
+		print(enemic_llista)
 		dispara(enemic_llista)
 	rotation_degrees += 90
 	
 func _on_A_body_entered(body):
-	enemic_llista.append(body.get_parent())
+	if body.is_in_group("Tancs"):
+		enemic_llista.append(body.get_parent())
 
 func _on_A_body_exited(body):
-	enemic_llista.erase(body.get_parent())
+	if body.is_in_group("Tancs"):
+		enemic_llista.erase(body.get_parent())
 	
 func dispara(llista):
 	pot_disparar = false
