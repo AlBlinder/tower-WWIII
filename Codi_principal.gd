@@ -57,38 +57,91 @@ func cancela():
 func _on_Area_area_entered(area):
 	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
 		possible = false
+	print(area.get_parent().get_name())
 	
 func _on_Area_area_exited(area):
 	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
 		possible = true
-	 
 
 
 func _on_Area2_area_entered(area):
 	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
 		possible = false # Replace with function body.
-
+	print(area.get_parent().get_name())
 
 func _on_Area2_area_exited(area):
 	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
 		possible = true
 
+func _on_Area3_area_exited(area):
+	if area.get_parennt().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
+		possible = true 
+
 
 func _on_Area3_area_entered(area):
-	pass # Replace with function body.
+	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
+		possible = false # Replace with function body.
+	print(area.get_parent().get_name())
 
 
 func _on_Area4_area_entered(area):
-	pass # Replace with function body.
-
+	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
+		possible = false 
+	print(area.get_parent().get_name())
 
 func _on_Area4_area_exited(area):
-	pass # Replace with function body.
+	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
+		possible = true # Replace with function body.
 
 
 func _on_Area5_area_entered(area):
-	pass # Replace with function body.
-
+	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
+		possible = false 
+	print(area.get_parent().get_name())
 
 func _on_Area5_area_exited(area):
-	pass # Replace with function body.
+	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
+		possible = true # Replace with function body.
+
+
+func _on_Area6_area_entered(area):
+	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
+		possible = false 
+	print(area.get_parent().get_name())
+
+func _on_Area6_area_exited(area):
+	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
+		possible = true 
+
+
+func _on_Area7_area_entered(area):
+	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
+		possible = false 
+	print(area.get_parent().get_name())
+
+func _on_Area7_area_exited(area):
+	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
+		possible = true 
+
+
+func _on_Area8_area_entered(area):
+	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
+		possible = false 
+	print(area.get_parent().get_name())
+
+func _on_Area8_area_exited(area):
+	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
+		possible = true 
+
+
+func _on_Area9_area_entered(area):
+	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
+		possible = false 
+	print(area.get_parent().get_name())
+
+func _on_Area9_area_exited(area):
+	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
+		possible = true 
+	
+
+
