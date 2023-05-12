@@ -5,7 +5,9 @@ var diccionari  = {1:"res://Torretes/Torre1.tscn", 2: "res://Torretes/Torre2.tsc
 var mode_construccio = false
 var torreta
 var control
-var possible = true
+var tipus_
+var nova
+var comencat
 
 func _ready():	
 	get_node("interficie/Control/Botons_torretes/boto_t1").connect("pressed", self,	"carrega", [1])
@@ -19,7 +21,9 @@ func _process(delta):
 		crea()
 
 func carrega(tipus):
-	torreta = load(diccionari[tipus]).instance()
+	comencat = true
+	tipus_ = tipus
+	torreta = load(diccionari[tipus_]).instance()
 	if not mode_construccio:
 		mode_construccio = true
 	if not control:
@@ -34,110 +38,31 @@ func carrega(tipus):
 func crea():
 	var pos = get_global_mouse_position()
 	control.rect_position = pos
-	
+	print(pos)
 	if torreta.possible:
 		torreta.modulate = "ad54ff3c"
 	else:
 		torreta.modulate = "adff4545"
 	
 func _input(event):
-	if event.is_action_pressed("boto_dret") and mode_construccio == true:
-		cancela()
+	if comencat:
+
+		var pos = get_local_mouse_position()
+		nova = load(diccionari[tipus_]).instance()
+		if event.is_action_pressed("boto_dret") and mode_construccio == true:
+			cancela()
+		if event.is_action_pressed("boto_esquerra") and mode_construccio == true and torreta.possible == true:
+			cancela()
+			get_node("Mapa/Torretes").add_child(nova, true)
+			print(pos)
+			nova.position = pos
+
 		
 func cancela():
 	mode_construccio = false
 	control.queue_free()
 	control = false
 
-	
-
-#func _on_Area_area_entered(area):
-#	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
-#		possible = false
-#
-#
-#func _on_Area_area_exited(area):
-#	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
-#		possible = true
-#
-#
-#func _on_Area2_area_entered(area):
-#	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
-#		possible = false # Replace with function body.
-#
-#
-#func _on_Area2_area_exited(area):
-#	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
-#		possible = true
-#
-#func _on_Area3_area_exited(area):
-#	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
-#		possible = true 
-#
-#
-#func _on_Area3_area_entered(area):
-#	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
-#		possible = false # Replace with function body.
-#
-#
-#func _on_Area4_area_entered(area):
-#	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
-#		possible = false 
-#
-#
-#func _on_Area4_area_exited(area):
-#	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
-#		possible = true # Replace with function body.
-#
-#
-#func _on_Area5_area_entered(area):
-#	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
-#		possible = false 
-#
-#
-#func _on_Area5_area_exited(area):
-#	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
-#		possible = true # Replace with function body.
-#
-#
-#func _on_Area6_area_entered(area):
-#	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
-#		possible = false 
-#
-#
-#func _on_Area6_area_exited(area):
-#	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
-#		possible = true 
-#
-#
-#func _on_Area7_area_entered(area):
-#	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
-#		possible = false 
-#
-#
-#func _on_Area7_area_exited(area):
-#	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
-#		possible = true 
-#
-#
-#func _on_Area8_area_entered(area):
-#	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
-#		possible = false 
-#
-#
-#func _on_Area8_area_exited(area):
-#	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
-#		possible = true 
-#
-#
-#func _on_Area9_area_entered(area):
-#	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
-#		possible = false 
-#
-#
-#func _on_Area9_area_exited(area):
-#	if area.get_parent().get_name() == "Torre1" or area.get_parent().get_name() == "Torre2" or area.get_parent().get_name() == "Torre3":
-#		possible = true 
 	
 
 
