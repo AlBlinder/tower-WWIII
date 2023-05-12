@@ -5,7 +5,7 @@ var tancs = [preload("res://Tanc1.tscn"), preload("res://Tanc2.tscn"), preload("
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	ona3()
+	ona1()
 	$CanvasLayer/Ones.visible_characters = 0
 	
 
@@ -40,7 +40,7 @@ func ona1():
 	crea_enemic(1, 2, 4)
 	yield(get_tree().create_timer(12), "timeout")
 	crea_enemic(1, 1, 1)
-	yield(get_tree().create_timer(10), "timeout")
+	yield(get_tree().create_timer(30), "timeout")
 	ona2()
 	
 func ona2():
@@ -48,7 +48,7 @@ func ona2():
 	crea_enemic(1, 2, 2)
 	yield(get_tree().create_timer(6), "timeout")
 	crea_enemic(1, 2, 1)
-	yield(get_tree().create_timer(10), "timeout")
+	yield(get_tree().create_timer(30), "timeout")
 	ona3()
 	
 func ona3():
