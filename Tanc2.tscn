@@ -14,7 +14,7 @@ extents = Vector2( 57.5, 111 )
 scale = Vector2( 0.25, 0.25 )
 script = ExtResource( 6 )
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+[node name="KinematicBody2D" type="KinematicBody2D" parent="." groups=["Tancs"]]
 rotation = 1.5708
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
