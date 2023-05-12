@@ -1,16 +1,18 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Tanques/PNG/Weapon_Color_B/Gun_06.png" type="Texture" id=1]
 [ext_resource path="res://Tanques/PNG/Hulls_Color_B/Hull_08.png" type="Texture" id=2]
 [ext_resource path="res://Tanques/PNG/Tracks/Track_2_A.png" type="Texture" id=3]
 [ext_resource path="res://Tanques/PNG/Tracks/Track_2_B.png" type="Texture" id=4]
 [ext_resource path="res://UI/HPbar.jpg" type="Texture" id=5]
+[ext_resource path="res://Tanc2.gd" type="Script" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 57.5, 111 )
 
 [node name="Tanc2" type="PathFollow2D"]
 scale = Vector2( 0.25, 0.25 )
+script = ExtResource( 6 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 rotation = 1.5708
