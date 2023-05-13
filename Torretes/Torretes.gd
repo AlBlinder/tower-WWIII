@@ -1,44 +1,45 @@
 extends Node2D
 var enemic_llista = []
-var built = false
+var construida = false
 var pot_disparar = true
+export var possible := false
+var llista := ["ocupat", "Area", "Area1", "Area2", "Area3", "Area4", "Area5", "Area6", "Area7", "Area8", "Area9", "Area10"]
+var contacte := []
 var dades_torres = {
 	"T1": {
 		"mal": 20,
 		"Area": 350,
-		"temps_recarrega": 2},
+		"temps_recarrega": 2,
+		"preu" : 200},
 	"T2": {
 		"mal": 5,
 		"Area": 100,
-		"temps_recarrega": 0.5},
+		"temps_recarrega": 0.5,
+		"preu" : 300},
 	"T3": {
 		"mal": 40,
 		"Area": 500,
-		"temps_recarrega": 3}
+		"temps_recarrega": 3,
+		"preu" : 500}
 }
-export var possible := false
-var llista := ["ocupat", "Area", "Area1", "Area2", "Area3", "Area4", "Area5", "Area6", "Area7", "Area8", "Area9", "Area10"]
-var ara := []
 
-
-func _ready():
-	pass
-	
 func _process(delta):
 	gira()
-	if ara.size() <= 0:
-		possible = true
-	else:
-		possible = false
+	if not construida:
+		if contacte.size() <= 0:
+			possible = true
+		else:
+			possible = false
 func gira():
-	if enemic_llista.size() == 0:
-		return
-	var posicio_enemic = enemic_llista[0].global_position
-	$Torreta.look_at(posicio_enemic)
+	if construida:
+		if enemic_llista.size() == 0:
+			return
+		var posicio_enemic = enemic_llista[0].global_position
+		$Torreta.look_at(posicio_enemic)
 
-	if pot_disparar:
-		dispara(enemic_llista)
-	rotation_degrees += 90
+		if pot_disparar:
+			dispara(enemic_llista)
+		rotation_degrees += 90
 	
 func _on_A_body_entered(body):
 	if body.is_in_group("Tancs"):
@@ -59,10 +60,10 @@ func dispara(llista):
 	
 func _on_ocupat_area_entered(area):
 	if area.get_name() in llista:
-		ara.append(area.get_name())
+		contacte.append(area.get_name())
 
 func _on_ocupat_area_exited(area):
 	if area.get_name() in llista:
-		ara.erase(area.get_name())
+		contacte.erase(area.get_name())
 
 

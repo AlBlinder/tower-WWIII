@@ -1,5 +1,5 @@
 extends Node
-
+var nou_menu = false
 
 
 func _ready():
@@ -8,7 +8,16 @@ func _ready():
 	get_node("Menu/MarginContainer/VBoxContainer/credits").connect("pressed", self, "clicar_credits")
 	get_node("Credits/MarginContainer/VBoxContainer/torna_menu").connect("pressed", self, "clicar_menu")
 	get_node("Credits").visible = false
-
+	
+func _process(delta):
+	if nou_menu:
+		get_node("Menu/MarginContainer/VBoxContainer/juga").connect("pressed", self, "clicar_juga")
+		get_node("Menu/MarginContainer/VBoxContainer/surt").connect("pressed", self, "clicar_surt")
+		get_node("Menu/MarginContainer/VBoxContainer/credits").connect("pressed", self, "clicar_credits")
+		get_node("Credits/MarginContainer/VBoxContainer/torna_menu").connect("pressed", self, "clicar_menu")
+		get_node("Credits").visible = false
+		nou_menu = false
+		
 
 func clicar_surt():
 	$clicar_boto.play()

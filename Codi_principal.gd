@@ -2,12 +2,16 @@ extends Node2D
 
 
 var diccionari  = {1:"res://Torretes/Torre1.tscn", 2: "res://Torretes/Torre2.tscn", 3:"res://Torretes/Torre3.tscn"}
-var mode_construccio = false
+var mode_construccio := false
 var torreta
 var control
 var tipus_
 var nova
 var comencat
+var vida := 100
+var existent := true
+var diners := 1000
+
 
 func _ready():	
 	get_node("interficie/Control/Botons_torretes/boto_t1").connect("pressed", self,	"carrega", [1])
@@ -17,8 +21,11 @@ func _ready():
 
 
 func _process(delta):
-	if mode_construccio:
-		crea()
+	if existent:
+		get_node("interficie/Control/vida_base").value = vida
+		get_node("interficie/Control/diners_valor").text = str(diners)
+		if mode_construccio:
+			crea()
 
 func carrega(tipus):
 	comencat = true
@@ -38,7 +45,6 @@ func carrega(tipus):
 func crea():
 	var pos = get_global_mouse_position()
 	control.rect_position = pos
-	print(pos)
 	if torreta.possible:
 		torreta.modulate = "ad54ff3c"
 	else:
@@ -46,16 +52,16 @@ func crea():
 	
 func _input(event):
 	if comencat:
-
 		var pos = get_local_mouse_position()
 		nova = load(diccionari[tipus_]).instance()
 		if event.is_action_pressed("boto_dret") and mode_construccio == true:
 			cancela()
-		if event.is_action_pressed("boto_esquerra") and mode_construccio == true and torreta.possible == true:
+		if event.is_action_pressed("boto_esquerra") and mode_construccio == true and torreta.possible == true and nova.dades_torres[torreta.tipus]["preu"] <= diners:
 			cancela()
 			get_node("Mapa/Torretes").add_child(nova, true)
-			print(pos)
 			nova.position = pos
+			nova.construida = true
+			diners -= nova.dades_torres[torreta.tipus]["preu"]
 
 		
 func cancela():
@@ -63,6 +69,5 @@ func cancela():
 	control.queue_free()
 	control = false
 
-	
-
-
+func _on_Base_body_entered(body):
+	vida -= body.get_parent().punts_vida / 10

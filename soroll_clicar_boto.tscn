@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Audio/623175__aphom000__button-click-selection.wav" type="AudioStream" id=1]
+
+[node name="clicar_boto" type="AudioStreamPlayer"]
+stream = ExtResource( 1 )
