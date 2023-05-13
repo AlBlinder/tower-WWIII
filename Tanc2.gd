@@ -22,6 +22,6 @@ func tocat(mal):
 	punts_vida -= mal
 	barra_vida.value = punts_vida
 	if punts_vida <= 0:
-		DadesJoc.diners += 200
+		DadesJoc.diners += 300
 		self.queue_free()
 	
