@@ -10,7 +10,6 @@ var nova
 var comencat
 var vida := 100
 var existent := true
-var diners := 1000
 
 
 func _ready():	
@@ -23,7 +22,7 @@ func _ready():
 func _process(delta):
 	if existent:
 		get_node("interficie/Control/vida_base").value = vida
-		get_node("interficie/Control/diners_valor").text = str(diners)
+		get_node("interficie/Control/diners_valor").text = str(DadesJoc.diners)
 		if mode_construccio:
 			crea()
 
@@ -56,12 +55,12 @@ func _input(event):
 		nova = load(diccionari[tipus_]).instance()
 		if event.is_action_pressed("boto_dret") and mode_construccio == true:
 			cancela()
-		if event.is_action_pressed("boto_esquerra") and mode_construccio == true and torreta.possible == true and nova.dades_torres[torreta.tipus]["preu"] <= diners:
+		if event.is_action_pressed("boto_esquerra") and mode_construccio == true and torreta.possible == true and nova.dades_torres[torreta.tipus]["preu"] <= DadesJoc.diners:
 			cancela()
 			get_node("Mapa/Torretes").add_child(nova, true)
 			nova.position = pos
 			nova.construida = true
-			diners -= nova.dades_torres[torreta.tipus]["preu"]
+			DadesJoc.diners -= nova.dades_torres[torreta.tipus]["preu"]
 
 		
 func cancela():

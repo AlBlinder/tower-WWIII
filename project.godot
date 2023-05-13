@@ -13,6 +13,10 @@ config_version=4
 config/name="Tower- Wwiii"
 run/main_scene="res://Canviador_escenes.tscn"
 
+[autoload]
+
+DadesJoc="*res://dades_joc.gd"
+
 [display]
 
 window/size/width=1900
@@ -22,6 +26,8 @@ mouse_cursor/custom_image="res://UI/Altres/PNG/cursor_pointerFlat_shadow.png"
 [global]
 
 cursor=false
+autolab=false
+carga=false
 
 [gui]
 

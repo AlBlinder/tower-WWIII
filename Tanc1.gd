@@ -7,7 +7,6 @@ var punts_vida := 200
 onready var barra_vida := get_node("barra_vida")
 
 
-
 func _ready():
 	barra_vida.max_value = punts_vida
 	barra_vida.value = punts_vida
@@ -22,4 +21,5 @@ func tocat(mal):
 	punts_vida -= mal
 	barra_vida.value = punts_vida
 	if punts_vida <= 0:
+		DadesJoc.diners += 100
 		self.queue_free()
