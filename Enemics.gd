@@ -33,14 +33,13 @@ func text_wave(num):
 func ona1():
 	acabada = false
 	text_wave(1)
-	crea_enemic(2, 2, 4)
+	crea_enemic(1, 2, 4)
 	yield(get_tree().create_timer(12), "timeout")
 	crea_enemic(1, 1, 1)
 	yield(get_tree().create_timer(30), "timeout")
 	acabada = true 
 	print(acabada)
 	ona2()
-
 	
 func ona2():
 	acabada = false
