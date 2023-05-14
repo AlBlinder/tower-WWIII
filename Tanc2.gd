@@ -13,7 +13,7 @@ func _ready():
 	offset = 0
 
 func _process(delta):
-	offset += velocitat * delta * 1.5
+	offset += velocitat * delta * 1.25
 	barra_vida.set_position(position - Vector2(25, 0))
 
 func tocat(mal):
