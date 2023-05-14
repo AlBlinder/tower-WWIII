@@ -27,11 +27,11 @@ var dades_tancs = {
 		"vida": 200,
 		"benefici" : 100},
 	"2": {
-		"velocitat": 150,
+		"velocitat": 100,
 		"vida": 100,
 		"benefici" : 200},
 	"3": {
-		"velocitat": 50,
+		"velocitat": 60,
 		"vida": 500,
 		"benefici" : 500}
 }
