@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/torreta2_soroll.ogg-14a8b61f4731d6b3a299a44de753e295.oggstr"
+
+[deps]
+
+source_file="res://Audio/torreta2_soroll.ogg"
+dest_files=[ "res://.import/torreta2_soroll.ogg-14a8b61f4731d6b3a299a44de753e295.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
