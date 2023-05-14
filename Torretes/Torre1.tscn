@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Tanques/PNG/Weapon_Color_A/Gun_03.png" type="Texture" id=1]
 [ext_resource path="res://Default size/towerDefense_tile181.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Default size/towerDefense_tile297.png" type="Texture" id=5]
 [ext_resource path="res://Default size/towerDefense_tile295.png" type="Texture" id=6]
 [ext_resource path="res://Default size/towerDefense_tile298.png" type="Texture" id=7]
+[ext_resource path="res://Audio/torreta2_soroll.wav" type="AudioStream" id=8]
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -58,6 +59,20 @@ tracks/2/keys = {
 "update": 1,
 "values": [ 0 ]
 }
+tracks/3/type = "audio"
+tracks/3/path = NodePath("../../../AudioStreamPlayer")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 8 )
+} ],
+"times": PoolRealArray( 0 )
+}
 
 [sub_resource type="Animation" id=4]
 length = 0.001
@@ -105,6 +120,9 @@ centered = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="A"]
 shape = SubResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath("../Torreta/Barril/AnimatedSprite")
