@@ -35,4 +35,5 @@ var dades_tancs = {
 		"vida": 500,
 		"benefici" : 500}
 }
+var guanyat = false
 

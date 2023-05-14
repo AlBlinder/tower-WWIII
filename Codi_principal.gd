@@ -39,6 +39,20 @@ func _process(delta):
 			soroll.set_name("clicar_boto")
 			get_parent().nou_menu = true
 			self.queue_free()
+		if DadesJoc.guanyat:
+			get_node("joc_acabat").text = "YOU WON"
+			get_node("joc_acabat").visible = true
+			yield(get_tree().create_timer(3), "timeout")
+			joc_existent = false
+			get_parent().add_child(menu)
+			menu.set_name("Menu")
+			get_parent().add_child(credits)
+			credits.set_name("Credits")
+			get_parent().add_child(soroll)
+			soroll.set_name("clicar_boto")
+			get_parent().nou_menu = true
+			self.queue_free()
+			
 		if mode_construccio:
 			crea()
 

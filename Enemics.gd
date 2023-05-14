@@ -136,13 +136,14 @@ func ona10():
 	text_wave("10")
 	crea_enemic(2, 3, 2)
 	yield(get_tree().create_timer(5), "timeout")	
-	crea_enemic(3, 4, 2)
-	yield(get_tree().create_timer(8), "timeout")	
-	crea_enemic(1, 1, 4)
-	yield(get_tree().create_timer(5), "timeout")	
-	crea_enemic(3, 3, 2)
-	yield(get_tree().create_timer(30), "timeout")
+#	crea_enemic(3, 4, 2)
+#	yield(get_tree().create_timer(8), "timeout")	
+#	crea_enemic(1, 1, 4)
+#	yield(get_tree().create_timer(5), "timeout")	
+#	crea_enemic(3, 3, 2)
+#	yield(get_tree().create_timer(30), "timeout")
 	acabada = true
+	DadesJoc.guanyat = true
 
 
 

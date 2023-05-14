@@ -26,7 +26,6 @@ func gira():
 	
 func _on_A_body_entered(body):
 	enemic_llista.append(body.get_parent())
-	print(enemic_llista[0].get_name())
 #	if body.is_in_group("Tancs"):
 #		enemic_llista.append(body.get_parent())
 
