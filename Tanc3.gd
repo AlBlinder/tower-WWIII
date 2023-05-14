@@ -7,6 +7,9 @@ var punts_vida = DadesJoc.dades_tancs["3"]["vida"]
 onready var barra_vida := get_node("barra_vida")
 
 func _ready():
+	barra_vida.max_value = punts_vida
+	barra_vida.value = punts_vida
+	barra_vida.set_as_toplevel(true)
 	offset = 0
 
 func _process(delta):
