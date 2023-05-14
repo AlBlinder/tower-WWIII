@@ -6,7 +6,7 @@ var acabada = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	ona9()
+	ona1()
 	$CanvasLayer/Ones.visible_characters = 0
 		
 
