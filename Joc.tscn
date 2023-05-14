@@ -12,7 +12,7 @@ _data = {
 }
 
 [sub_resource type="DynamicFont" id=11]
-size = 500
+size = 450
 font_data = ExtResource( 8 )
 
 [sub_resource type="RectangleShape2D" id=2]

@@ -8,17 +8,17 @@ var dades_torres = {
 		"mal": 30,
 		"Area": 350,
 		"temps_recarrega": 2,
-		"preu" : 200},
+		"preu" : 500},
 	"T2": {
 		"mal": 7,
 		"Area": 100,
 		"temps_recarrega": 0.4,
-		"preu" : 300},
+		"preu" : 600},
 	"T3": {
 		"mal": 50,
 		"Area": 500,
 		"temps_recarrega": 3,
-		"preu" : 500}
+		"preu" : 800}
 }
 
 var dades_tancs = {

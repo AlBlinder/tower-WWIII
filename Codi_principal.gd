@@ -20,7 +20,7 @@ func _ready():
 	get_node("interficie/Control/Botons_torretes/boto_t1").connect("pressed", self,	"carrega", [1])
 	get_node("interficie/Control/Botons_torretes/boto_t2").connect("pressed", self,	"carrega", [2])
 	get_node("interficie/Control/Botons_torretes/boto_t3").connect("pressed", self,	"carrega", [3])
-	 
+	get_node("interficie/Control/diners_valor").text = str(DadesJoc.diners) + " $"
 
 
 func _process(delta):
@@ -39,10 +39,11 @@ func _process(delta):
 			soroll.set_name("clicar_boto")
 			get_parent().nou_menu = true
 			self.queue_free()
-		if DadesJoc.guanyat:
-			get_node("joc_acabat").text = "YOU WON"
+			
+		if DadesJoc.guanyat and get_node("Mapa/Enemics").get_children().size() <= 1:
+			get_node("joc_acabat").text = "YOU   WON!!!"
 			get_node("joc_acabat").visible = true
-			yield(get_tree().create_timer(3), "timeout")
+			yield(get_tree().create_timer(5), "timeout")
 			joc_existent = false
 			get_parent().add_child(menu)
 			menu.set_name("Menu")
