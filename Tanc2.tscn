@@ -10,7 +10,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 57.5, 111 )
 
-[node name="Tanc2" type="PathFollow2D"]
+[node name="PathFollow2D" type="PathFollow2D"]
 scale = Vector2( 0.25, 0.25 )
 script = ExtResource( 6 )
 

@@ -2,8 +2,8 @@ extends PathFollow2D
 
 
 var moviment := Vector2(1,1)
-var velocitat := 100
-var punts_vida := 100
+var velocitat = DadesJoc.dades_tancs["2"]["velocitat"]
+var punts_vida = DadesJoc.dades_tancs["2"]["vida"]
 onready var barra_vida := get_node("barra_vida")
 
 func _ready():

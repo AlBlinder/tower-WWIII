@@ -25,12 +25,15 @@ func gira():
 		rotation_degrees += 90
 	
 func _on_A_body_entered(body):
-	if body.is_in_group("Tancs"):
-		enemic_llista.append(body.get_parent())
+	enemic_llista.append(body.get_parent())
+	print(enemic_llista[0].get_name())
+#	if body.is_in_group("Tancs"):
+#		enemic_llista.append(body.get_parent())
 
 func _on_A_body_exited(body):
-	if body.is_in_group("Tancs"):
-		enemic_llista.erase(body.get_parent())
+	enemic_llista.erase(body.get_parent())
+#	if body.is_in_group("Tancs"):
+#		enemic_llista.erase(body.get_parent())
 	
 func dispara(llista):
 	pot_disparar = false

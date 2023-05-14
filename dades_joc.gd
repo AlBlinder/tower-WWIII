@@ -24,15 +24,15 @@ var dades_torres = {
 var dades_tancs = {
 	"1": {
 		"velocitat": 100,
-		"temps_recarrega": 2,
+		"vida": 200,
 		"benefici" : 100},
 	"2": {
-		"velocitat": 100,
-		"temps_recarrega": 0.5,
+		"velocitat": 150,
+		"vida": 100,
 		"benefici" : 200},
 	"3": {
-		"velocitat": 500,
-		"temps_recarrega": 3,
+		"velocitat": 70,
+		"vida": 500,
 		"benefici" : 500}
 }
 
