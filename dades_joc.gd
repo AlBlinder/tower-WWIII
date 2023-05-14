@@ -23,7 +23,7 @@ var dades_torres = {
 
 var dades_tancs = {
 	"1": {
-		"velocitat": 100,
+		"velocitat": 80,
 		"vida": 200,
 		"benefici" : 100},
 	"2": {
@@ -31,7 +31,7 @@ var dades_tancs = {
 		"vida": 100,
 		"benefici" : 200},
 	"3": {
-		"velocitat": 70,
+		"velocitat": 50,
 		"vida": 500,
 		"benefici" : 500}
 }
