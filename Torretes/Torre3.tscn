@@ -1,22 +1,9 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Default size/towerDefense_tile181.png" type="Texture" id=1]
 [ext_resource path="res://Tanques/PNG/Weapon_Color_A/Gun_07.png" type="Texture" id=2]
 [ext_resource path="res://Torretes/Torre3.gd" type="Script" id=3]
-[ext_resource path="res://Tanques/PNG/Effects/Smoke_A.png" type="Texture" id=4]
-[ext_resource path="res://Tanques/PNG/Effects/Smoke_B.png" type="Texture" id=5]
-[ext_resource path="res://Tanques/PNG/Effects/Flash_A_02.png" type="Texture" id=6]
-[ext_resource path="res://Tanques/PNG/Effects/Smoke_C.png" type="Texture" id=7]
-[ext_resource path="res://Tanques/PNG/Effects/Flash_A_01.png" type="Texture" id=8]
-[ext_resource path="res://Tanques/PNG/Effects/Flash_A_03.png" type="Texture" id=9]
-
-[sub_resource type="SpriteFrames" id=2]
-animations = [ {
-"frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 9 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 7 ) ],
-"loop": false,
-"name": "default",
-"speed": 1.0
-} ]
+[ext_resource path="res://Default size/towerDefense_tile297.png" type="Texture" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 344.333
@@ -24,94 +11,21 @@ radius = 344.333
 [sub_resource type="CircleShape2D" id=6]
 radius = 81.4286
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=7]
 resource_name = "Dispara"
+length = 0.05
+step = 0.05
 tracks/0/type = "value"
-tracks/0/path = NodePath(".:playing")
+tracks/0/path = NodePath("Torreta/Barril2/Sprite:visible")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.6 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.05 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ false, true, false ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath(".:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0, 0.1, 0.6 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 1,
-"values": [ false, true, false ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath(".:frame")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ 0 ]
-}
-
-[sub_resource type="Animation" id=5]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/path = NodePath("../../../AnimationPlayer:root_node")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ NodePath("../Torreta/Barril2/AnimatedSprite") ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath(".:playing")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ true ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath(".:visible")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ true ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath(".:frame")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 0 ]
+"values": [ true, false ]
 }
 
 [node name="Torre3" type="Node2D"]
@@ -130,11 +44,11 @@ offset = Vector2( 0, -50 )
 [node name="Barril2" type="Position2D" parent="Torreta"]
 position = Vector2( 0, -165 )
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Torreta/Barril2"]
-position = Vector2( 0, -63.744 )
-scale = Vector2( 2.049, 2.24 )
-frames = SubResource( 2 )
-playing = true
+[node name="Sprite" type="Sprite" parent="Torreta/Barril2"]
+visible = false
+position = Vector2( 0, -100 )
+scale = Vector2( 4.538, 5.062 )
+texture = ExtResource( 4 )
 
 [node name="Area2D" type="Area2D" parent="."]
 
@@ -147,9 +61,7 @@ shape = SubResource( 1 )
 shape = SubResource( 6 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-root_node = NodePath("../Torreta/Barril2/AnimatedSprite")
-anims/Dispara = SubResource( 4 )
-anims/RESET = SubResource( 5 )
+anims/Dispara = SubResource( 7 )
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_A_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_A_body_exited"]

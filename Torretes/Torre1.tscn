@@ -100,7 +100,7 @@ visible = false
 position = Vector2( -153, -250 )
 scale = Vector2( 2.38907, 2.47768 )
 frames = SubResource( 2 )
-speed_scale = 3.5
+speed_scale = 3.0
 centered = false
 
 [node name="A" type="Area2D" parent="."]
