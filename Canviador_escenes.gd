@@ -29,6 +29,8 @@ func clicar_juga():
 	get_node("Credits").queue_free()
 	var escena_joc = load("res://Joc.tscn").instance()	
 	add_child(escena_joc)
+	DadesJoc.diners = 1000
+	DadesJoc.vida_base = 100
 
 func clicar_credits():
 	$clicar_boto.play() 

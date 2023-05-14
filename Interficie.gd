@@ -4,7 +4,9 @@ var credits = load("res://Credits.tscn").instance()
 var soroll = load("res://soroll_clicar_boto.tscn").instance()
 
 func _ready():
-	pass # Replace with function body.
+	get_node("Botons_torretes/boto_t1/preu_1").text = str(DadesJoc.dades_torres["T1"]["preu"]) + " $"
+	get_node("Botons_torretes/boto_t2/preu_2").text = str(DadesJoc.dades_torres["T2"]["preu"]) + " $"
+	get_node("Botons_torretes/boto_t3/preu_3").text = str(DadesJoc.dades_torres["T3"]["preu"]) + " $"
 
 
 func _on_boto_t1_pressed():
@@ -35,7 +37,7 @@ func _on_boto_t3_mouse_entered():
 
 
 func _on_TextureButton_pressed():
-	get_parent().get_parent().existent = false
+	get_parent().get_parent().joc_existent = false
 	get_parent().get_parent().get_parent().add_child(menu)
 	menu.set_name("Menu")
 	get_parent().get_parent().get_parent().add_child(credits)

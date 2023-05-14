@@ -12,24 +12,24 @@ extents = Vector2( 81, 127.5 )
 rotation = -1.5708
 scale = Vector2( 0.25, 0.25 )
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="." groups=["Tancs"]]
+[node name="cos3" type="KinematicBody2D" parent="." groups=["Tancs"]]
 rotation = 1.5708
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cos3"]
 position = Vector2( 2.18557e-08, 0.5 )
 shape = SubResource( 1 )
 
-[node name="Track 3A" type="Sprite" parent="KinematicBody2D"]
+[node name="Track 3A" type="Sprite" parent="cos3"]
 position = Vector2( -56, 1 )
 texture = ExtResource( 3 )
 
-[node name="Track 3B" type="Sprite" parent="KinematicBody2D"]
+[node name="Track 3B" type="Sprite" parent="cos3"]
 position = Vector2( 57, 1 )
 texture = ExtResource( 4 )
 
-[node name="Hull05" type="Sprite" parent="KinematicBody2D"]
+[node name="Hull05" type="Sprite" parent="cos3"]
 texture = ExtResource( 2 )
 
-[node name="Gun07" type="Sprite" parent="KinematicBody2D/Hull05"]
+[node name="Gun07" type="Sprite" parent="cos3/Hull05"]
 position = Vector2( 1, -28 )
 texture = ExtResource( 1 )

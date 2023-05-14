@@ -12,8 +12,6 @@ func _ready():
 	barra_vida.set_as_toplevel(true)
 	offset = 0
 
-
-
 func _process(delta):
 	offset += velocitat * delta * 2
 	barra_vida.set_position(position - Vector2(25, 0))
@@ -22,6 +20,6 @@ func tocat(mal):
 	punts_vida -= mal
 	barra_vida.value = punts_vida
 	if punts_vida <= 0:
-		DadesJoc.diners += 300
+		DadesJoc.diners += DadesJoc.dades_tancs["2"]["benefici"]
 		self.queue_free()
 	

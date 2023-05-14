@@ -17,5 +17,5 @@ func _process(delta):
 func tocat(mal):
 	punts_vida -= mal
 	if punts_vida <= 0:
-		DadesJoc.diners += 400
+		DadesJoc.diners += DadesJoc.dades_tancs["3"]["benefici"]
 		self.queue_free()	
