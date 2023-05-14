@@ -13,7 +13,7 @@ radius = 81.4286
 
 [sub_resource type="Animation" id=7]
 resource_name = "Dispara"
-length = 0.05
+length = 0.1
 step = 0.05
 tracks/0/type = "value"
 tracks/0/path = NodePath("Torreta/Barril2/Sprite:visible")
@@ -22,7 +22,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.05 ),
+"times": PoolRealArray( 0, 0.1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ true, false ]
@@ -46,8 +46,8 @@ position = Vector2( 0, -165 )
 
 [node name="Sprite" type="Sprite" parent="Torreta/Barril2"]
 visible = false
-position = Vector2( 0, -100 )
-scale = Vector2( 4.538, 5.062 )
+position = Vector2( 0, -78.441 )
+scale = Vector2( 2.978, 4.089 )
 texture = ExtResource( 4 )
 
 [node name="Area2D" type="Area2D" parent="."]
