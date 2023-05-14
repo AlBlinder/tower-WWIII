@@ -6,7 +6,7 @@ var acabada = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	ona1()
+	ona9()
 	$CanvasLayer/Ones.visible_characters = 0
 		
 
@@ -113,7 +113,12 @@ func ona7():
 func ona8():
 	acabada = false
 	text_wave(8)
-	crea_enemic(1, 4, 5)
+	crea_enemic(2, 4, 2)
+	yield(get_tree().create_timer(9), "timeout")
+	crea_enemic(1, 1, 0)
+	crea_enemic(1, 2, 2)
+	yield(get_tree().create_timer(5), "timeout")
+	crea_enemic(1, 2, 3)
 	yield(get_tree().create_timer(30), "timeout")	
 	acabada = true
 	ona9()
@@ -121,7 +126,12 @@ func ona8():
 func ona9():
 	acabada = false
 	text_wave(9)
-	crea_enemic(1, 4, 5)
+	crea_enemic(3, 3, 3)
+	yield(get_tree().create_timer(11), "timeout")
+	crea_enemic(1, 2, 0)
+	crea_enemic(3, 2, 2)
+	yield(get_tree().create_timer(2), "timeout")
+	crea_enemic(2, 2, 2)	
 	yield(get_tree().create_timer(30), "timeout")	
 	acabada = true
 	ona10()
@@ -131,7 +141,8 @@ func ona10():
 	text_wave("10")
 	crea_enemic(2, 3, 2)
 	yield(get_tree().create_timer(3), "timeout")	
-	crea_enemic(3, 2, 2)
+	crea_enemic(3, 4, 2)
+	yield(get_tree().create_timer(4), "timeout")	
 	crea_enemic(1, 1, 4)
 	yield(get_tree().create_timer(2), "timeout")	
 	crea_enemic(3, 3, 2)
