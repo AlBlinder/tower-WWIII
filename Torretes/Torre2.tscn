@@ -4,7 +4,7 @@
 [ext_resource path="res://Default size/towerDefense_tile181.png" type="Texture" id=2]
 [ext_resource path="res://Torretes/Torre2.gd" type="Script" id=3]
 [ext_resource path="res://Default size/towerDefense_tile298.png" type="Texture" id=4]
-[ext_resource path="res://Audio/torreta2_soroll.wav" type="AudioStream" id=5]
+[ext_resource path="res://Audio/torreta2_soroll.ogg" type="AudioStream" id=5]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 191.434
@@ -39,6 +39,20 @@ tracks/1/keys = {
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ true, false ]
+}
+tracks/2/type = "audio"
+tracks/2/path = NodePath("AudioStreamPlayer")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 5 )
+} ],
+"times": PoolRealArray( 0 )
 }
 
 [node name="Torre2" type="Node2D"]
