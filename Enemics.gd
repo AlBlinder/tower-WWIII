@@ -6,12 +6,8 @@ var acabada = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	ona1()
+	ona10()
 	$CanvasLayer/Ones.visible_characters = 0
-		
-
-	#crea_enemic(1,4,1)
-
 
 func crea_enemic(tipus, numero, temps):
 	yield(get_tree().create_timer(temps), "timeout")
