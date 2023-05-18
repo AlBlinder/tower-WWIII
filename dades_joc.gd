@@ -1,7 +1,7 @@
 extends Node
 
 
-var diners = 100
+var diners = 1000
 var vida_base = 100
 var dades_torres = {
 	"T1": {
